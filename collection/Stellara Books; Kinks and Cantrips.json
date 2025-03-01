@@ -950,8 +950,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "ritual",
-					"condition": "1 hour"
+					"unit": "hour"
 				}
 			],
 			"range": {
@@ -980,8 +979,7 @@
 			"entries": [
 				"You perform a special ceremony centered around two or more willing adult creatures forming an oath with each other which is signified by the fastening of a collar. All creatures taking part in the oath choose if they will wear a collar or be affixing a collar. Each collar used as part of the ritual must be worth at least 50 gp.",
 				"You touch the collars, imbuing them with an enchantment that seals the oath. Then each creature that is fastening a collar does so to a creature that chose to wear a collar, speaking aloud the oath as they do so. Afterward, each creature who chose to wear a collar speaks their portion of the oath and the ceremony comes to a close.",
-				"Collars imbued with this oath can only be removed by those who affixed it, or who affixed another collar as part of the same ceremony. Creatures may be bound by a single Collaring",
-				"Ceremony oath at a time.",
+				"Collars imbued with this oath can only be removed by those who affixed it, or who affixed another collar as part of the same ceremony. Creatures may be bound by a single Collaring Ceremony oath at a time.",
 				"When two or more creatures that have taken this oath are within 30 feet of each other, each gains a +1 bonus to their AC and a +1 bonus to their saving throws. A creature that is wearing a collar for this oath has advantage on saving throws and ability checks that would magically compel it to take a course of action by a creature other than one that affixed a collar for this oath.",
 				"In addition, creatures that have taken this oath may once per day cast the {@spell Sending} spell without spending a spell slot or having the spell prepared. If they do so, they may only target another creature that is part of the oath.",
 				"When an oath imbued collar is removed from a creature, the oath ends and all creatures that took part in the oath lose its benefits."
@@ -2861,8 +2859,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -2889,6 +2886,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"Calling forth a fragment of the Lightborn Cage, you enact a ritual of binding to seal away a great evil. The ritual requires 5 participants to concentrate on the spell, including yourself, which need to be arranged equidistant from each other within range of the target for the duration of this spell's casting. Once complete the target is wrapped in chains of pure golden light that bind its physical form to where it was located when the ritual completes. While {@condition restrained} in this way, the target cannot move any portion of its body other than to speak or look around.",
 				"The chains also bind away the target's power, forming a divine barrier around it in much the same way the Lightborn Cage  does for the Malitic Deities. The target may not cast spells or use any of its abilities, feats, features, traits, or magic items. It may however speak and see, so it is free to converse, but it cannot manifest power to magically manipulate those that interact with it. The target is also immune to all damage and spells while bound in this way as spells from outside the binding also cannot penetrate inside of it.",
@@ -3824,8 +3824,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -3852,6 +3851,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature they become addicted to the sensation of suffering and find their abilities diminished if they are not experiencing pain. At the same time, they are better able to withstand punishment due to their increased pain tolerance. The target has disadvantage on skill checks unless they have at least 2 Pain. In addition, any damage the target would receive is lowered by the amount of Pain they have and they lose 1 Pain at the end of each of their turns rather than the normal pace."
@@ -3869,8 +3871,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -3897,6 +3898,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When a creature is imprinted with this sigil, speak a particular word or short phrase to link with it. This is known as an awakening phrase. When the awakening phrase is spoken and heard by the creature imprinted with this sigil, they enter a fugue state and become intensely submissive toward the creature that spoke the awakening phrase. While in this state the imprinted creature may be told a course of action by the creature that spoke the awakening phrase that is not obviously harmful. On its turn, the imprinted creature will do its best to complete the course of action it was given. If it is not given a course of action the imprinted creature will stand {@condition incapacitated} in a stupor. No other effect may magically compel the imprinted creature while it is in this state.",
@@ -3915,8 +3919,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -3943,6 +3946,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature, it may be paired with an Axon Link sigil upon another creature within 60 feet of the target. In turn, that creature's Axon Link sigil is paired with the target's sigil. When a creature imprinted with an Axon Link sigil gains any amount of Pleasure or Pain, the creature who has a sigil paired with that creature gains an equal amount of Pleasure or Pain."
@@ -3960,8 +3966,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -3988,6 +3993,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature you implant a potent bundle of magic-fueled sensation which can be released at a moment's notice. As a bonus action on your turn while you are within 120 feet of the imprinted creature you may speak a command word and have the sigil flair before depositing its energy into the target. When it does so, the target's Pleasure is set to its maximum and it becomes {@condition stunned} as it is overwhelmed. From that time and until the imprinted creature has no Pleasure, it loses 2 Pleasure at the end of each of its turns, cannot gain Pleasure, and it is immune to being {@condition stunned}."
@@ -4008,8 +4016,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -4036,6 +4043,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature they perceive all pleasurable sensations as painful. The intensity of this pain is equal to the pleasure they would feel, but even an affectionate massage will be felt as uncomfortable. While imprinted with this sigil the target cannot gain Pleasure and if they would gain any amount of Pleasure they instead receive an equal amount of Pain."
@@ -4053,8 +4063,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -4081,6 +4090,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature they become unable to cover themselves fully, always leaving their genitals and other erogenous zones exposed for any who wish to make use of them. They will only choose to wear clothes that leave uncovered those regions of the body and they will either uncontrollably maneuver their hands away or otherwise bind themselves so they may not resist the use of or hide their body.",
@@ -4106,8 +4118,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -4134,6 +4145,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 			"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature they become acutely aware of those around them that are assessing their potential to provide carnal pleasure to them. The target gains a latent psychic ability to know when another creature is looking at them lasciviously and what the gazer is imagining doing with them. While imprinted with this sigil the target has the following effects:",
@@ -4161,8 +4175,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -4189,6 +4202,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"When this sigil is imprinted on a creature a bond is formed between the pleasure centers of their brain and their higher cognitive functions. As the target gains increasing levels of physical pleasure they grow less and less conscious of the world around them, until eventually they are left a trembling mass that is incapable of defending itself. The target's maximum Pleasure becomes 10 or its current maximum (whichever is higher), it has disadvantage on the Constitution saving throw for exceeding its maximum Pleasure, and it gains the following effects depending on how much Pleasure they have (effects are cumulative with all previous effects):",
@@ -4246,8 +4262,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -4274,6 +4289,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 			 "As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 		
@@ -4292,8 +4310,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute",
-					"note": "ritual"
+					"unit": "minute"
 				}
 			],
 			"range": {
@@ -4320,6 +4337,9 @@
 					]
 				}
 			],
+			"meta": {
+				"ritual": true
+			},
 			"entries": [
 				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
 				"A sigil commonly used by Ziicubus to create a pliant stable of prey to feed upon, when this sigil is imprinted on a creature they begin to crave physical pleasure without end and become susceptible to mental manipulation. The target has disadvantage on saving throws made to resist being {@condition charmed}.",
