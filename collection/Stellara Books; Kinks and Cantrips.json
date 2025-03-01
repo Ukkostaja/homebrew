@@ -1,0 +1,4752 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KinksAndCantrips",
+				"abbreviation": "KaC",
+				"full": "Kinks and Cantrips",
+				"url": "https://www.kickstarter.com/projects/kinksandcantrips/kinks-and-cantrips",
+				"authors": [
+					"T. S. Michaels",
+                    "Fiona Shade Stories"
+				],
+				"convertedBy": [
+					"Ukkostaja"
+				],
+				"color": "222227",
+				"version": "0.9.0"
+			}
+		],
+		"status": "wip",
+		"dateAdded": 1740585348,
+		"dateLastModified": 1740585348,
+		"edition": "classic"
+	},
+	"condition": [
+		{
+			"name": "Pleasure",
+			"source": "KinksAndCantrips",
+			"page": 81,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Much like in real life, there is a physical limit of either pain or pleasure any creature can endure before they begin to suffer consequences. Within the game, this maximum value is equal to half Constitution score of the creature, rounded down (e.g. a creature with 18 Constitution may have a max of 9 Pain or Pleasure, respectively). If a creature would gain any points over their maximum, instead they must succeed on a DC 15 Constitution saving throw or suffer the following effects, depending on whether they are gaining Pleasure or Pain:",
+						"{@bold Pleasure.} The creature is stunned until the end of its next turn and loses half of its Pleasure.",
+						"Every time a creature is required to make a Constitution saving throw against these effects and succeeds, the DC for the saving throw is increased by 1. After 1 minute of gaining neither Pleasure or Pain, the saving throw DC is reset to 15. Regardless of the type, no creature may gain more Pain or Pleasure than half their Constitution score, and any excess points they would gain are lost."
+					]
+				}
+			]
+		}, 
+		{
+			"name": "Pain",
+			"source": "KinksAndCantrips",
+			"page": 81,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Much like in real life, there is a physical limit of either pain or pleasure any creature can endure before they begin to suffer consequences. Within the game, this maximum value is equal to half Constitution score of the creature, rounded down (e.g. a creature with 18 Constitution may have a max of 9 Pain or Pleasure, respectively). If a creature would gain any points over their maximum, instead they must succeed on a DC 15 Constitution saving throw or suffer the following effects, depending on whether they are gaining Pleasure or Pain:",
+						"{@bold Pain.} The creature makes all ability checks and attack rolls with disadvantage until the end of its next turn. The creature also suffers a cumulative -1 penalty to its Wisdom and Charisma scores. This penalty can never reduce the creature’s Wisdom or Charisma to less than 1. The creature’s Wisdom and Charisma scores return to normal after 1 minute of not gaining any Pain.",
+						"Every time a creature is required to make a Constitution saving throw against these effects and succeeds, the DC for the saving throw is increased by 1. After 1 minute of gaining neither Pleasure or Pain, the saving throw DC is reset to 15. Regardless of the type, no creature may gain more Pain or Pleasure than half their Constitution score, and any excess points they would gain are lost."
+					]
+				}
+			]
+		}
+	] ,
+	"spell": [
+		{
+			"name": "Adhesive Globule",
+			"source": "KinksAndCantrips",
+			"page": 165,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of honey"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You summon a small glob of a sticky substance and hurl it at a creature within range. Choose one of the following body parts to aim for and make a ranged spell attack roll. On a hit, the target suffers the effects listed for that body part.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Eyes",
+							"entry": "The target is {@condition blinded}. The attack roll for this effect has a -3 penalty."
+						},
+						{
+							"type": "item",
+							"name": "Feet",
+							"entry": "The target's speed is reduced to 0."
+						},
+						{
+							"type": "item",
+							"name": "Hands",
+							"entry": "The target may only make a maximum one attack on their turn. This cannot not effect creatures that are Huge or larger."
+						},
+						{
+							"type": "item",
+							"name": "Mouth",
+							"entry": "They can neither speak nor satisfy the verbal component for spells. The attack roll for this effect has a -3 penalty."
+						}
+					],
+					"style": "list-hang-notitle"
+				},
+				"A creature under one of these effects can use its action to make a Strength check against your spell save DC. If it succeeds, the effect ends as it frees itself."
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aftercare",
+			"source": "KinksAndCantrips",
+			"page": 165,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a segment of fuzzy cloth"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You weave a delicate enchantment through an affectionate and caring embrace in order to help the target recover from a trying ordeal. For each point of Pleasure or Pain the target had when you began to cast this spell (to a maximum of 4), they may roll one of their Hit Die and regain hit points equal to the result plus their Constitution modifier. without expending it during the next rest they take within an hour."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the maximum number of Hit Die that can be rolled is increased by 2 for every slot level above 1st."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHP"
+					}
+				]
+			}
+		},
+		{
+			"name": "Alter Sex",
+			"source": "KinksAndCantrips",
+			"page": 165,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You assume a different form, taking on the genitalia of your choosing. You may choose the specifics of the genitalia such as whether it is circumcised or the hymen is intact. In addition, you may make subtle alterations to your physique such as gaining or losing breasts, changing your jawline, or hair length/ style but you must remain the same race you were before casting the spell. Any creature that is familiar with you will still recognize you despite these changes. If a creature is affected by this spell with the same specific details every day for a month, the effects become permanent.",
+				"You may cast this spell using a spell slot to increase its capabilities (see below)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you may instead target a willing creature within 5 feet of you. When you cast it using a spell slot of 5th level or higher, you may make the effect permanent on either yourself or another target as described above."
+					]
+				}
+			],
+			"miscTags": [
+				"PRM",
+				"PIR"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHP"
+					}
+				]
+			}
+		},
+		{
+			"name": "Anatomical Compatibility",
+			"source": "KinksAndCantrips",
+			"page": 165,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ring of pliant laticifex"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A willing target's anatomy becomes magically malleable, allowing for consensual copulation with a creature of vastly different size than it without harm. This may occur via the creature's anatomy expanding, the other creature's anatomy shrinking upon entering the target, or whatever effect the GM decides is appropriate; but this effect may never prevent damage or harm being taken from a hostile creature."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHP"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aphrodisiac Aura",
+			"source": "KinksAndCantrips",
+			"page": 165,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an oyster"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Any creature other than yourself within 30 ft. of you that gains one or more Pleasure gains that many plus 1. In addition, any creature that begins their turn within 30 ft. of you when you cast this spell must make a Wisdom saving throw. On a failed save that creature is {@condition charmed} by you until the spell ends."
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHP"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ask Nicely",
+			"source": "KinksAndCantrips",
+			"page": 165,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature uses an action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Projecting your will into a creature, you make a contested Charisma ({@skill Intimidation|XPHB}) or Charisma ({@skill Persuasion|XPHB}) check vs the target's Wisdom ({@skill Insight|XPHB}). If you win the contest, until the end of this turn, the target may not use the action you are reacting to. Instead it may choose another action to perform."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHP"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aspect of Planifolia",
+			"source": "KinksAndCantrips",
+			"page": 166,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vanilla bean"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"When you cast this spell, you lose all Pleasure and Pain points you currently have. Until the spell ends, you cannot gain Pleasure or Pain as your conceptual self eschews deriving importance from such sensations."
+			]
+		},
+		{
+			"name": "Balloon",
+			"source": "KinksAndCantrips",
+			"page": 166,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a patch of latex"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"One creature of your choice that you can see within range inflates with air, massively ballooning outward in the process.",
+				"The spell can affect a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.",
+				"While inflated the creature's weight is reduced to 1/10th of its normal weight, it has a fly speed (hover) of 20 feet, any bludgeoning damage it receives pushes the creature 5 feet in a direction away from the damage source, and it takes an additional {@damage 2d6} piercing damage when it suffers piercing damage as a result of an attack."
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Beautiful Binding",
+			"source": "KinksAndCantrips",
+			"page": 166,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a twist of soft jute rope"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a long piece of rope, willing it to twist about the target and bind them. If you target a non-humanoid creature with this spell it ends as the technique employed is only viable on creatures which resemble humans anatomically (the target need not have a humanoid creature type, they need only have roughly the same type of body structure).",
+				"When you cast this spell and as a bonus action on your following turns, the target must succeed on a Dexterity saving throw or suffer one of the following effects of your choosing:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Double Column Wrist Cuffs",
+							"entry": "The rope binds the target's wrists together behind their back. The target has disadvantage on Dexterity checks and attack rolls. They are also prevented from satisfying the somatic component of spellcasting."
+						},
+						{
+							"type": "item",
+							"name": "Spiral Futomomo Leg Binding",
+							"entry": "The rope weaves an intricate pattern between each of the target's respective thighs and calves, forcing them to a kneeling position and making it difficult to move. The target has disadvantage on Dexterity saving throws and becomes {@condition prone} as it must crawl to move."
+						},
+						{
+							"type": "item",
+							"name": "Hishi Karada Harness",
+							"entry": "The rope knots and twists about the target's torso forming a harness which winds down through the crotch and about the breasts. The tension of the harness amplifies sensations and creates an arousing effect. The target has disadvantage on saving throws to resist any effect that would cause it to gain Pleasure."
+						},
+						{
+							"type": "item",
+							"name": "Monkey's Fist Gag",
+							"entry": "The rope balls itself into a large knot which is tied about the target's head in a facsimile of a ball gag made of rope. This makes all speech unintelligible as the target can only mumble. The target cannot satisfy the verbal component of spellcasting."
+						}
+					],
+					"style": "list-hang-notitle"
+				},
+				"Ropes conjured this way are non-magical and continue to exist when the spell ends, though they are too frail to use reliably for climbing. These ropes have 5 hit points and an AC of 10. As an action the target may make a Strength or Dexterity check vs your spell save DC to escape one of these effects, ending it when they do so."
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Bliss",
+			"source": "KinksAndCantrips",
+			"page": 166,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a token of happiness"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"While within 15 feet of you, creatures of your choosing gain a +2 bonus to attack rolls and saving throws so long as they have one or more Pleasure.",
+				"As a bonus action on your turn, you may have a willing creature within range gain 1 Pleasure."
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Blow of Shl'opa",
+			"source": "KinksAndCantrips",
+			"page": 166,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a boot"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Channeling the essence of the ancient monk Shl'opa, you project a series of ethereal hands which smack at foes' rumps or faces. Choose a point within range, all creatures within a 10 foot sphere centered on that point must make a Dexterity saving throw. A creature takes {@damage 3d8} thunder damage + their Pain on a failed save, or half as much damage on a successful one. A creature that fails the saving throw gains 1 Pain."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each spell slot above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Break the Chains",
+			"source": "KinksAndCantrips",
+			"page": 167,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature you can see that is restrained or grappled begins its turn"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The target automatically escapes being {@condition grappled} or {@condition restrained} and suffers no penalties to its movement speed.",
+				"In addition, if the target makes a melee weapon attack using Strength they gain a bonus to the damage roll equal to your spellcasting ability modifier."
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Charged Touch",
+			"source": "KinksAndCantrips",
+			"page": 167,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ball of wool"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You induce an arcane charge of lightning within your body, which arcs from you in short bursts. You gain 5 temporary hit points for the duration. When you take damage, you may choose to not lose these temporary hit points and instead suffer the damage normally.",
+				"If a creature hits you with a melee attack, you may spend any amount of temporary hit points to deal that creature an equal amount of lightning damage. In addition, if you spend a spell slot to cast this spell, as a bonus action you may touch an adjacent creature and cast this spell on them without spending a spell slot. Casting this spell in that way is considered to have been cast at the same spell level as this spell was originally cast using a spell slot.",
+				"This spell ends early when you have no temporary hit points."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points are increased by 5 for every two slot levels above 1st."
+					]
+				}
+			],
+			"miscTags": [
+				"THP",
+				"UBA"
+			]
+		},
+		{
+			"name": "Choking Collar",
+			"source": "KinksAndCantrips",
+			"page": 167,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a scrap of leather"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You apparate a heavy leather collar encircling the throat of a creature, willing it to pull tight and strangle. The target must succeed on a Strength saving throw or begin to suffocate. While suffocating that creature cannot breathe, satisfy the verbal component for spells, and cannot speak other than in vague vocalizations. A suffocating creature may as an action attempt to remove the collar from their throat by making a Strength saving throw, ending the effect upon a success."
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Clamping Chains",
+			"source": "KinksAndCantrips",
+			"page": 167,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose a point on either an immovable object, the ground, a wall, or the ceiling within 10 feet of a creature in range. You summon two iron chains that spring forth from that point, their ends tipped with toothed clamps which attempt to attach themselves to the target. The target must make a Dexterity saving throw. On a failure the target cannot move more than 10 feet from the point the chains tether them to. A creature may use 15 feet of movement to make a Strength saving throw in an attempt to break free from the clamps. On a success they take {@dice 3d8} plus their Pain piercing damage and gain 1 Pain as they rip free of the clamps. On a failure, they gain 1 Pain and remain tethered."
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Collaring Ceremony",
+			"source": "KinksAndCantrips",
+			"page": 167,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "ritual",
+					"condition": "1 hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a diamond worth at least 50 gp which the spell consumes",
+					"cost": 5000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You perform a special ceremony centered around two or more willing adult creatures forming an oath with each other which is signified by the fastening of a collar. All creatures taking part in the oath choose if they will wear a collar or be affixing a collar. Each collar used as part of the ritual must be worth at least 50 gp.",
+				"You touch the collars, imbuing them with an enchantment that seals the oath. Then each creature that is fastening a collar does so to a creature that chose to wear a collar, speaking aloud the oath as they do so. Afterward, each creature who chose to wear a collar speaks their portion of the oath and the ceremony comes to a close.",
+				"Collars imbued with this oath can only be removed by those who affixed it, or who affixed another collar as part of the same ceremony. Creatures may be bound by a single Collaring",
+				"Ceremony oath at a time.",
+				"When two or more creatures that have taken this oath are within 30 feet of each other, each gains a +1 bonus to their AC and a +1 bonus to their saving throws. A creature that is wearing a collar for this oath has advantage on saving throws and ability checks that would magically compel it to take a course of action by a creature other than one that affixed a collar for this oath.",
+				"In addition, creatures that have taken this oath may once per day cast the {@spell Sending} spell without spending a spell slot or having the spell prepared. If they do so, they may only target another creature that is part of the oath.",
+				"When an oath imbued collar is removed from a creature, the oath ends and all creatures that took part in the oath lose its benefits."
+			],
+			"miscTags": [
+				"MAC"
+			]
+		},{
+			"name": "Compete for Me",
+			"source": "KinksAndCantrips",
+			"page": 168,
+			"level": 8,
+			"school": "E",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You incite a ritual of competition such that a number of creatures can vie for your mark of approval. When you cast this spell choose 2-8 willing creatures within range that can understand you to compete.",
+				"The competition is held by transporting yourself, the contestants, and up to 50 willing bystanders to a demiplane created by this spell. This demiplane is of your creation and can be any environment of your choosing, but all objects created within the demiplane vanish once they are removed from the demiplane. Any food or drink ingested in the demiplane (including those created as part of this spell) satiate as they would in the material plane. Any creature may leave the demiplane freely simply by willing themselves to do so, but cannot return once they have exited. The purpose of this demiplane is to be a safe and thematically appropriate place to hold the competition in regards to this spell, and the GM is the final arbiter for what is or is not within the purview of what can be created within it.",
+				"You must set a goal that can only be completed by a single contestant. Whichever contestant completes the task wins and gains your boon, which causes the competition to end and the demiplane to vanish. When you begin the competition you may choose to restrain or adorn the contestants in any manner of your choosing, and any items required are summoned attached to the contestants. Most commonly a competition will involve a series of skill checks as determined by the GM, but the GM may decide to run the competition as they see fit under the parameters and intentions you set forth.",
+				"Contestants may not choose to automatically fail saving throws or skill checks during this competition, and any attempt to choose a winner by forfeit or trickery nullifies the competition and ends it without anyone gaining a boon.",
+				"When a contestant wins the competition you grant them a boon. The winner gains the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Their AC is increased by 2.",
+						"Choose a damage type from among acid, cold, fire, force, lightning, necrotic, radiant, or thunder. Their weapon attacks deal a bonus {@damage 2d8} damage of that damage type.",
+						"The first time they would drop to 0 hit points as a result of taking damage, they instead drop to 1 hit point. Once this effect is used, it may not be used again until the spell ends.",
+						"When they make an attack roll or saving throw they may roll a {@dice d4} and add the number rolled to the result."
+					]
+				},
+				"You may only ever have a boon granted upon one creature at a time and if you would grant a boon to another creature, your previously granted boon fades. If a new creature would gain a boon as a result of this spell any previous boon's effects end."
+			]
+		},
+		{
+			"name": "Creeping Encasement",
+			"source": "KinksAndCantrips",
+			"page": 168,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ball of sticky tar"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You fling a tiny blob of sticky material at the target, making a ranged spell attack as you do so. On a hit, the ball attaches itself to the target and begins to grow over the surface of their body. At the end of each of the target's turns the blob expands and advances through the following stages, increasingly restraining the target as it does so. The penalties for each stage are additive with all previous stages.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Sticky Patch",
+							"entry": "The target has disadvantage on attack rolls."
+						},
+						{
+							"type": "item",
+							"name": "Partially Covered",
+							"entry": "The target has its movement speed reduced by half and it has disadvantage on Dexterity saving throws."
+						},
+						{
+							"type": "item",
+							"name": "Half Covered",
+							"entry": "The target's movement speed is 0 and it automatically fails Dexterity saving throws."
+						},
+						{
+							"type": "item",
+							"name": "Almost Fully Covered",
+							"entry": "The target may not attack or satisfy the somatic component for spells."
+						},
+						{
+							"type": "item",
+							"name": "Encased",
+							"entry": "The target cannot breathe, speak, or satisfy the verbal component for spells."
+						}
+					],
+					"style": "list-hang-notitle"
+				},
+				"For each stage above Sticky Patch, the target has a cumulative -1 penalty to Strength checks and saving throws they make. The target or another creature may use an action to try and rip away the blob, in order to so they must make a Strength saving throw against your spell save DC. On a success the effect ends and the target is freed."
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Crushing Pain",
+			"source": "KinksAndCantrips",
+			"page": 169,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small vise"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a pocket of intense gravity around a sensitive region of the target's anatomy, such as the genitals. The target must make a Constitution saving throw. On a failure the target takes {@damage 3d8} + their Pain bludgeoning damage, gains 1 Pain, and has disadvantage on attack rolls and ability checks until the end of its next turn. On a success the target takes half as much damage and they suffer no additional effects."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd, and the Pain gained increases by 1 for every two slots levels above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Dollify",
+			"source": "KinksAndCantrips",
+			"page": 169,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lock"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You attempt to lock away a creature in a state that blends stasis with paralysis. The target must make an Intelligence saving throw.",
+				"On a failed save, the target is {@condition incapacitated} as its limbs go rigid and its speed drops to 0. For the spell's duration, the affected creature can see, hear, feel, taste, and smell normally but has no way to move or manipulate their body. In addition, they do not need to breathe, eat, or drink, has resistance to all damage, and gains Pleasure and Pain normally. While {@condition incapacitated} in this way, an adjacent creature may move and pose them as they would a mannequin.",
+				"If a creature affected by this spell takes damage, it may repeat the saving throw and does so with advantage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the duration increases by 1 hour for each slot level above 4th."
+					]
+				}
+			],
+			"damageResist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "Dommaturgy",
+			"source": "KinksAndCantrips",
+			"page": 169,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You exert your dominance via a minor magical feat. You may do any of the following within range:",
+				{
+					"type": "list",
+					"items": [
+						"Alter the appearance of your eyes for 1 minute",
+						"Cut a piece of rope no thicker than 2 inches in diameter",
+						"Fasten or unfasten a buckle or clasp",
+						"Lock or unlock a mundane lock used to secure a cage, straps, or manacles without requiring a key",
+						"Manipulate a piece of chain, leather, or rope",
+						"Tie or untie a moderately complex knot"
+					]
+				}
+			]
+		},
+		{
+			"name": "Earthbound",
+			"source": "KinksAndCantrips",
+			"page": 169,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of dried vine"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Vines erupt from the ground, seeking to lash a creature to the earth. Target creature that you can see within range must make a Dexterity saving throw. On a failure the target is pulled to the ground, becoming {@condition grappled} and {@condition prone}. For every 10 feet downward the target is pulled, they suffer {@damage 2d6} bludgeoning damage. The {@condition grappled} creature may make a Strength saving throw at the end of its turns, setting itself free on a success."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Epitome of Suffering",
+			"source": "KinksAndCantrips",
+			"page": 170,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon forth a 300 foot radius region perfectly created for the suffering of others, be it inspired by the infernal realms or a twisted landscape born of your own imagination. This area does not truly warp the physical aspects of the area, but rather creates an ethereal facsimile matching the specifications for the aesthetics you desire. Similarly, a swarm of intangible entities fills the region, able only to mete out pain and enhance the suffering of those within it. You may have these entities appear as you wish, such as a cadre of demons or a gaggle of semisentient torture devices, in keeping with the previous examples.",
+				"When a creature enters the area for the first time or starts its turn there, it must make a Constitution saving throw. On a failure, that creature takes {@damage 1d6} necrotic damage for each point of Pain it has. On a success, the creature takes half that amount of damage instead.",
+				"Any creature that fails the Constitution saving throw from accruing Pain over their maximum becomes {@condition unconscious} instead of the normal negative effects.",
+				"When you cast this spell, you may choose whether or not it affects you."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Epitome of Tentacles",
+			"source": "KinksAndCantrips",
+			"page": 170,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Reaching into the far reaches of reality, you summon forth a fragment of a tentacled being from beyond the veil. Every surface in an area 300 feet in radius centered upon you when you cast the spell begins to sprout tentacles which search for any creature it can find.",
+				"For the duration of the spell, all creatures move at half speed within the area. When a creature that is not {@condition restrained} by the tentacles enters the area for the first time or starts its turn there, it must make a Dexterity saving throw. On a failed save the creature takes {@damage 10d6} psychic damage, then becomes {@condition restrained} by the tentacles. On a success, they take half as much damage and do not become {@condition restrained}. While {@condition restrained} in this way, creatures may only speak in mumbled intonations and cannot satisfy the verbal component of spells.",
+				"Any creature that ends its turn {@condition restrained} by the tentacles gains 1 Pleasure and must make a Constitution saving throw.",
+				"On a failed save, that creature takes {@damage 1d6} psychic damage for each point of Pleasure it has. If a creature fails this saving throw while it has maximum Pleasure, it must make the Constitution saving throw for accruing more than their maximum Pleasure with disadvantage while they remain {@condition restrained} by the tentacles. As an action, a creature may either attempt to escape being {@condition restrained} by the tentacles or free another creature by succeeding on a Strength saving throw.",
+				"When you cast this spell, you may choose whether or not it affects you."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Epitome of Euphoria",
+			"source": "KinksAndCantrips",
+			"page": 170,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You transform a wide area into a blissful space which enchants and influences those within it via a blend of aphrodisiacs. The air in a 300 foot radius sphere centered on you is altered for this effect, the cause of which may you choose as appropriate when you cast this spell. For example a deity of desire may bathe the area in a light which alters the minds of those within it, or plants begin puffing pollen into the air which is inhaled. This choice is purely aesthetic and has no effect on whether a creature is affected within the area.",
+				"When a creature enters the area for the first time or starts its turn there, it must make a Wisdom saving throw. On a failure, the creature becomes {@condition charmed}. While a creature is {@condition charmed} in this way, it makes Wisdom, Intelligence, and Charisma saving throws with disadvantage, and gains 1 Pleasure at the start of its turns. In addition, a creature that is {@condition charmed} may not harm or take aggressive action against another creature. If a creature takes damage, it may make the saving throw again and does so with advantage.",
+				"If a creature within the area fails the saving throw for accruing Pleasure over their maximum, they suffer {@damage 1d6} necrotic damage for each point of Pleasure they have, then gain 1 level of {@condition exhaustion} instead of suffering the normal negative effects. When you cast this spell, you may choose any number of creatures that are unaffected by this, and instead are subject to the normal negative effects of gaining more Pleasure than their maximum.",
+				"When you cast this spell, you may choose whether or not it affects you."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"charmed",
+				"exhaustion"
+			],
+			"savingThrow": [
+				"charisma",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Empathic Interrogation",
+			"source": "KinksAndCantrips",
+			"page": 170,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your understanding of a creature's suffering aids you with influencing their mind to your own ends. As part of casting this spell, you ask the target creature one question. That creature must make a Wisdom saving throw, answering the question truthfully on a failure. If both you and the target have at least 1",
+				"Pain, the target makes the saving throw with disadvantage. If you have more Pain than the target, and you both have at least 1",
+				"Pain, they automatically fail the saving throw."
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Fae Revel of Rumpus",
+			"source": "KinksAndCantrips",
+			"page": 171,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon forth a cloud of raucous pixies in a 20-foot sphere who were previously occupied with a rambunctious orgiastic party. Once summoned, the pixies continue their revelry in the area affected by this spell and try to pleasure each other with anything they can find in that space, including other creatures. Though tiny, this proves an effective distraction for any in this space.",
+				"Any creature that starts its turn in the area or enters it for the first time must make a wisdom saving throw. On a failure the creature suffers a {@dice d4} penalty to attack rolls, ability checks, and saving throws while within the revel's space."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Forniform",
+			"source": "KinksAndCantrips",
+			"page": 171,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an iron nail"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You channel objectifying energies into a creature, transforming them into a piece of furniture. Choose a willing creature within range and a piece of furniture that fits in a 10 foot cube and that weighs no more than 500 pounds.",
+				"The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be made of wood, stone, or metal (or any combination of these materials) and functions as a mundane example of that piece of furniture would function. The target is capable of perceiving its surroundings, but is {@condition paralyzed}.",
+				"While transformed, the target's AC is 20 and they begin the transformation with 50 hit points. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If they revert as a result of dropping to 0 hit points, any excess damage carries over to their normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, they aren't knocked {@condition unconscious}.",
+				"The target's gear melds into the new form. The target can't activate, use, wield, or otherwise benefit from any of its equipment. The spell has no effect on a shapechanger or a creature with 0 hit points."
+			],
+			"conditionInflict": [
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Gloriole",
+			"source": "KinksAndCantrips",
+			"page": 171,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A halo of divine energy surrounds your head. From it beams of light burst forth and solidify, creating a sealed box around you. Inside the box the holy energy has solidified into bands and chains of light, trapping you within. Holes have been left in the box's sides, each placed to give outsiders access to your mouth and nether orifices. For the spell's duration you are {@condition restrained} and have {@quickref Cover||3||total cover}, but any who wish to make use of your bound form for their own pleasure are free to do so.",
+				"Any creature that spends at least 5 minutes making use of one or more of your orifices during the spell's duration gains the benefits of a short rest and may add your spellcasting ability modifier to the amount rolled for regaining hit points by utilizing hit dice. They also gain the following benefits for the next 24 hours:",
+				{
+					"type": "list",
+					"items": [
+						"They gain resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing.",
+						"They can't be {@condition frightened}.",
+						"They double their proficiency bonus when making ability checks for a skill of your choice.",
+						"They gain {@dice 2d6} temporary hit points."
+					]
+				},
+				"For each creature that gains these benefits after the 4th, you must make a contested Constitution check against their Strength. That creature may not choose to fail this check. If you lose the contested roll, you gain 1 point of {@condition exhaustion}."
+			],
+			"damageResist": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"poison",
+				"psychic",
+				"radiant",
+				"thunder"
+			],
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
+			"name": "Golden Spray",
+			"source": "KinksAndCantrips",
+			"page": 171,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a sprig of asparagus"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A torrent of acrid fluid issues forth from your pelvis, dousing the area in front of you. All creatures within a 15-foot cone must make a Dexterity saving throw. On a failure the creature takes {@damage 4d6} poison damage and has disadvantage on Charisma ability checks until they can clean themselves. On a success the creature takes half as much damage and suffers no further effects."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell at 3rd level or higher, the damage increases by {@dice 1d6} for each spell slot above 2nd. If you cast this spell at 5th level or higher you may extend the range to a 30-foot cone"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Harima's Caustic Balm",
+			"source": "KinksAndCantrips",
+			"page": 172,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure and hurl a ball of goo at the target. The goo causes flesh it touches to feel like it is burning while also being extremely cold, intensifying any subsequent sensations.",
+				"The target must make a Dexterity saving throw. On a failed save the target takes {@damage 5d4} acid damage and becomes covered in goo. While covered, a creature gains 1 Pain when it gains any amount of Pleasure and takes {@damage 3d4} acid damage at the end of each of its turns. A creature may use an action to wipe away the goo. On a success the target takes {@damage 5d4} acid damage but does not become covered and the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage (both initial and delayed) increases by {@dice 1d4} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Heartbind",
+			"source": "KinksAndCantrips",
+			"page": 172,
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a platinum key worth at least 100 gp which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 30
+					}
+				}
+			],
+			"entries": [
+				"You create a temporary arcane gate, through which you attempt to extract a creature's heart. The target must succeed on a Charisma saving throw, or have its heart extracted by you. Once you have extracted a heart, it becomes bound in manifested arcane chains which you control. A creature that has its heart extracted in this way may continue to function as normal, as the spell ensures their bodily functions continue unabated.",
+				"For the duration of the spell, while you hold the creature's heart on your person, you may as a reaction cause the chains to channel destructive energy into the heart, dealing {@damage 5d10} force damage to the creature. In addition, a creature whose heart you possess makes Charisma ({@skill Deception}) checks against you with disadvantage.",
+				"If you attempt to coerce or command a creature whose heart you possess to take a suicidal action, the spell ends. You may end the spell early by using an action to dismiss it. A {@spell Remove Curse}, {@spell Greater Restoration}, or {@spell Wish} spell also ends it.When this spell ends, the target's heart returns to its normal position within its chest."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level, the duration is 1 year and the damage is increased to {@dice 7d10}. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above and the damage is increased to {@dice 10d10}."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Heel",
+			"source": "KinksAndCantrips",
+			"page": 172,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a leash"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"With a spoken command and a gesture toward your feet, you attempt to pull a creature to heel. The target must succeed on a Charisma saving throw or be pulled to an unoccupied space of the ground or floor adjacent to you, becoming {@condition prone} as it kneels at your feet."
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Holy Pyre",
+			"source": "KinksAndCantrips",
+			"page": 172,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an unlit match or piece of tinder"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A sturdy wooden pole erupts from the ground behind the target, with a pyre of dry wood at its base. Chains spring forth from behind the pole, attempting to ensnare the target and bind it tight against the pole. The target must make a Strength saving throw. On a failure the target is {@condition restrained} to the pole and the pyre bursts into flame. At the start of their turns the target takes {@damage 3d6} fire damage. If the target is a fiend, undead, or has an evil alignment, they take {@damage 6d6} radiant damage instead.",
+				"As an action the target may make a Strength check vs your spell save DC. On a success, they break free and the spell ends."
+			],
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"abilityCheck": [
+				"strength"
+			]
+		},
+		{
+			"name": "Intertwining Skein",
+			"source": "KinksAndCantrips",
+			"page": 172,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a length of knotted rope"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"An explosion of rope bursts out from you, restraining all creatures within a 120 foot cube centered on you and creating a veritable web. The rope not only restrains these creatures, but specifically seeks to bind affected creatures together without moving them. These ropes form a symbiotic link between all creatures enwrapped in them.",
+				"While {@condition restrained} in this way, any damage or hit point restoration that would affect a creature within the web is instead divided evenly among all affected creatures. At the end of their turns, any {@condition restrained} creature may make a Charisma saving throw in an attempt to break free of the ropework tangle. On a success, the creature takes {@damage 6d10} psychic damage and the spell ends. On a failure the creature suffers {@damage 2d10} psychic damage and the spell is maintained."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Iron Maiden",
+			"source": "KinksAndCantrips",
+			"page": 172,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manifest a spectral iron maiden under your control around a creature. The target must make a Dexterity saving throw. On a failure, they become {@condition restrained}. As an action, the {@condition restrained} creature may attempt to break free or a creature adjacent to it may attempt to free it by making a Strength saving throw, ending the effect on success.",
+				"When you cast this spell and as a bonus action on your following turns, you may make a ranged spell attack against the {@condition restrained} creature. On a hit the target takes {@damage 1d6} piercing damage for each point of Pain it has and then gains 1 Pain"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Kinkcraft",
+			"source": "KinksAndCantrips",
+			"page": 173,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You pull a piece of fetish gear or clothing from the air.",
+				"Reaching into the aether you may summon a blindfold, chest harness, gag, facsimile of a phallus, lock and key, nipple clamps, set of wrist/ankle restraints, or waist harness. The created item is made of latex, leather, metal, rubber, wood, or any combination of these materials and may not be larger than 3 feet in any direction or weigh more than 10 pounds.",
+				"This item lasts the duration of the spell, after which it fades from existence. Close inspection reveals summoned items are monetarily worthless."
+			]
+		},
+		{
+			"name": "La Enorme Mort",
+			"source": "KinksAndCantrips",
+			"page": 173,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"An arcane infusion amps up the pleasure of the target creature, placing stress upon their body. Target creature must make a Constitution saving throw. On a failed save, if the target has Pleasure points greater than or equal to half their maximum they take {@damage 1d6} necrotic damage for each point of Pleasure it has. If instead the creature has less Pleasure points than half their maximum, they take {@damage 2d6} necrotic damage. In either case, the target then gains 1 Pleasure. On a successful save the target takes half damage."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Left Exposed",
+			"source": "KinksAndCantrips",
+			"page": 173,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You surround a large or smaller creature with a localized blizzard, then remove their protection from the elements. The target's space is filled with a pocket of frigid air, which moves with them. For the duration of this spell, the target must make a Constitution saving throw at the beginning of its turn, taking {@damage 3d6} cold damage on a failure.",
+				"When you cast this spell, the target must make a Charisma saving throw. On a failure all mundane clothing and armor they are wearing vanishes into the ethereal plane. When this spell ends, their clothing and armor rematerializes on their body, just as it was when it vanished. A creature that would normally wear clothing but that is currently wearing no armor or clothing takes an additional {@damage 2d6} cold damage from failing the Constitution saving throw for this spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} (both from the saving throw and for wearing no clothing) for each slot level above 3rd. If you cast this spell using a spell slot of 5th level or higher the maximum size of creature it may effect is increased to huge and increases further to garganuan if cast using a spell slot of 7th level or higher."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"charisma",
+				"constitution"
+			]
+		},
+		{
+			"name": "Links of Light",
+			"source": "KinksAndCantrips",
+			"page": 173,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Channeling the energy of the Radiant Chain, you manifest burning luminescent bindings about a creature. The target must make a Dexterity saving throw. On a failure, you may instead choose one of the following effects.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Clenching Bind",
+							"entry": "The summoned chains wrap about the target, binding them in a mesh of metal made of vibrant light. The target is {@condition restrained} and as a bonus action on your turn you may have the target take {@damage 2d6} radiant damage + your spellcasting modifier as the chains coil tighter about them."
+						},
+						{
+							"type": "item",
+							"name": "Pulled Wide",
+							"entry": "The chains affix themselves to the target's limbs and then pull outward to force them into a spread eagle position. The target is {@condition restrained} and as a bonus action you may have the chains yank outward, making their already exposed position even more vulnerable. When you do so the target is vulnerable to the next bludgeoning, piercing or slashing damage it suffers."
+						}
+					],
+					"style": "list-hang-notitle"
+				},
+				"As an action the target may make either a Strength or Dexterity saving throw against your spell save DC, breaking free on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} and the target gains an additional damage instance they will be vulnerable to for each spell slot above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Lockingbell",
+			"source": "KinksAndCantrips",
+			"page": 173,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lily blossom"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You summon an ethereal bell which fastens itself to the target's spirit for the duration of the spell. The bell is attuned to the wavelength of aetheric energy needed for spellcasting by the target, and rings in a counter frequency to undo specific spellcasting. You may choose what form the bell takes, and how it is attached, but it is intangible and cannot affect the physical world.",
+				"The target must make a Charisma saving throw. On a failure, roll a {@dice d4}. For the duration of the spell the target cannot cast spells by spending a spell slot of a level equal to the result. For example if the result is a 3, the target may not cast spells using a 3rd level slot, but may still cast them by using a higher level spell slot."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a higher spell slot the dice rolled to determine level of spell effected is increased. Casting with a 5th level spell slot uses a {@dice d6}, 6th level a {@dice d8}, and 7th level a {@dice d10}."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Lubricate",
+			"source": "KinksAndCantrips",
+			"page": 174,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You point to an object or patch of ground no larger than 5 feet square and summon a layer of lubricant which coats it for the duration of the spell. The lubricant is non-flammable and if placed on the ground makes the area {@quickref difficult terrain||3}."
+			]
+		},
+		{
+			"name": "Luscious Duress",
+			"source": "KinksAndCantrips",
+			"page": 174,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You reach into the mind of a hostile creature you can see within range and force them to focus on their suffering so that you may draw power from it. The target must make a Charisma saving throw. On a failure they take {@damage 1d6} necrotic damage for each point of Pain they have and if they have at least 2 Pain you regain a 1st level spell slot. On a success, they take half the damage and you do not regain a spell slot."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell at 4th level or higher, you may instead regain a spell slot with a maximum level equal to half of the target's Pain to a maximum of 5th level."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Maelstrom of Lashes",
+			"source": "KinksAndCantrips",
+			"page": 174,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bullwhip"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Until the spell ends, the air within 20 feet of you is a swirling vortex of rushing wind. All fog, smoke, or other gasses within this space are dispersed. Small or smaller flying creatures consider the space {@quickref difficult terrain||3} even while flying. Any ranged attack made with an arrow, bolt, or other non-magical ammunition are made with disadvantage if the projectile would pass through this space.",
+				"As a bonus action, you may coalesce the wind into a stinging lash to strike out at a creature within this space. Make a ranged spell attack roll against a creature within 20 feet of you. On a hit, the target takes slashing damage equal to {@dice 1d8} + your spellcasting ability modifier + the amount of Pain they have, and then they gain 1 Pain."
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Maven's Sarcophagus",
+			"source": "KinksAndCantrips",
+			"page": 174,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an iron manacle"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You entomb yourself within an iron sarcophagus which is frigid to the touch. While you are entombed you have {@quickref Cover||3||total cover}, cannot be affected by spells that have an area of effect, are {@condition restrained}, and may not attack, cast spells, or use items.",
+				"The sarcophagus has 100 hit points and an AC of 20, and may not itself take actions as it is in an inanimate object. You may not end this spell early. If the sarcophagus is destroyed, the spell ends. Any creature other than you that ends its turn within 5 feet of the sarcophagus suffers 5 cold damage.",
+				"While you are entombed in the sarcophagus you are resistant to cold damage and can see in all directions around you as your vision is augmented by the spell. As an action you may manifest chains of ice from the sarcophagus and attempt to manipulate a creature or object within 120 feet of it. The target must succeed on a Strength saving throw or suffer one of the following effects (your choice):",
+				{
+					"type": "list",
+					"items": [
+						"The target is pulled 30 feet in a direction of your choosing.",
+						"The target's speed is reduced to 0 and it cannot benefit from any bonus to its speed until the start of your next turn.",
+						"The target is knocked {@condition prone}.",
+						"The target takes {@damage 4d6} bludgeoning damage.",
+						"{@action Attack|XPHB} rolls against the target have advantage, and the target's attack rolls have disadvantage until the start of your next turn.",
+						"The target has disadvantage on Strength and Dexterity saving throws until the start of your next turn."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th or higher level, you may choose an additional effect to apply to the target on a failed saving throw for each spell slot level above 5th. You may not choose the same effect more than once per round."
+					]
+				}
+			],
+			"damageResist": [
+				"cold"
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"cold"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			],
+			"miscTags": [
+				"FMV",
+				"MAC"
+			]
+		},
+		{
+			"name": "Melting Downpour",
+			"source": "KinksAndCantrips",
+			"page": 174,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ladle with hardened paraffin in the scoop"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a deluge of burning wax, causing it to run upon an area of 40-foot cylinder for a time. The affected area is {@quickref difficult terrain||3} as the melted wax makes the surface highly irregular.",
+				"When a creature enters the downpour for the first time or starts its turn there, it must make a Dexterity saving throw. On a failed save the creature takes {@damage 3d6} fire damage. If a creature fails the saving throw on a turn where it failed the saving throw for this spell on its previous turn, it gains 1 Pain and takes bonus damage equal to its Pain."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th or higher level, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"DFT",
+				"SMN"
+			]
+		},
+		{
+			"name": "Mindbreak",
+			"source": "KinksAndCantrips",
+			"page": 175,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a implement for inducing pain"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You strike a creature within range, trying to overwhelm their conscious mind such that their fight or flight reflexes kick in. Make a melee spell attack against a creature within your reach. On a hit  the target takes {@damage 4d8} necrotic damage plus {@damage 1d6} necrotic damage for each point of Pain it has, gains 1 Pain and must succeed on a Wisdom saving throw or become {@condition frightened}.",
+				"While {@condition frightened} in this way the target may not cast spells or make ranged attacks, and deals bonus damage when it hits with a melee attack equal to its Strength modifier plus its Pain. The target may repeat the Wisdom saving throw at the end of each of its turns, ending the effect on a success."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Onslaught of 1,000 Phalluses",
+			"source": "KinksAndCantrips",
+			"page": 175,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small phallically shaped sculpture"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You apparate a cloud of phalluses or phallically shaped items made of semi-solidified aether around the target. The cloud follows the target for the duration of the spell, obscuring their surroundings. For any attacks the target makes, the creature they target is considered to have {@quickref Cover||3||half cover}.",
+				"When you cast this spell and as a bonus action on your turn you may direct a number of the phalluses to attack the target, ramming into them at great speed. To do so, make a ranged spell attack roll. On a hit the target takes bludgeoning damage equal to {@dice 1d8} + your spellcasting modifier. If the attack roll is an unmodified 18-20 they also gain 1 Pleasure as one of the phalluses hits a sensitive area."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd or higher level, the damage increases by {@dice 1d8} for every two slot levels above 2nd."
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Paraffin Blast",
+			"source": "KinksAndCantrips",
+			"page": 175,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a candle"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"With a flick of the wrist, you spray out a burning spread of paraffin wax. Each creature in a 15-foot cone must make a Dexterity saving throw. On a failure, the creature takes {@damage 3d6} fire damage and the next time it takes fire damage it gains 1 Pain then suffers {@damage 1d6} fire damage for each point of Pain it has. On a success, the creature takes half damage and does not take additional damage when it is next dealt fire damage."
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Pediteres",
+			"source": "KinksAndCantrips",
+			"page": 175,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a large bare foot or boot of ethereal force above a creature within range before motioning it to stomp downward.",
+				"The target must make a Dexterity saving throw. On a success the creature takes {@damage 2d8} force damage. On a failure, choose one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Pointed Heel",
+							"entry": "The heel strikes a vulnerable portion of the target, causing maximum pain with the blow. The target suffers {@damage 4d8} + your spellcasting ability modifier + their Pain force damage and then gains 1 Pain."
+						},
+						{
+							"type": "item",
+							"name": "Stomp Flat",
+							"entry": "The blow is spread out, but relentless in its motion. The target takes {@damage 4d8} force damage and is knocked {@condition prone}."
+						},
+						{
+							"type": "item",
+							"name": "Dismissive Kick",
+							"entry": "The arcane construct strikes from the side, delivering a strong lateral blow. The target takes force damage equal to {@dice 4d8} + your spellcasting ability modifier and is pushed a number of feet equal to your spellcasting ability score."
+						}
+					],
+					"style": "list-hang-notitle"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage for any effect of failing the saving throw increases by {@dice 1d8} for each spell slot above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Postpone Punishment",
+			"source": "KinksAndCantrips",
+			"page": 175,
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature in range makes a roll for an ability check, attack roll, or saving throw, after the result is known"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You unbind the threads of fate, retying them into an outcome that you find more favorable. When a creature you can see within range makes a roll for an ability check, attack roll, or saving throw, after the result of the roll is known, you may substitute the roll with any value from 1 through 20. This value affects only the result of the dice roll. All modifiers, bonuses, and penalties that would apply afterward still apply to determine the result. If a roll is overridden this way, it may not be changed by any other features or spells.",
+				"The GM then notes a value equal to 21 minus the value chosen when casting this spell. They may override a dice roll related to the target with that value at a point of their choosing. If  the GM changes the result of a roll as a result of this spell, it may not be changed by any other features or spells. All modifiers, bonuses, and penalties that would apply to that roll still apply to determine a result"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Power from Pain",
+			"source": "KinksAndCantrips",
+			"page": 176,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose a willing creature within range. The next time you deal damage or heal any creature before the spell ends, you deal bonus damage or restore additional hit points to that creature equal to the original target's Pain. This bonus damage or healing may only affect a single creature. If you cast this spell again before this effect ends, you lose the benefits of the previous casting."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage or additional healing is again increased by the original target's Pain for every two spell slot levels you use above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Power Word: Freedom",
+			"source": "KinksAndCantrips",
+			"page": 176,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A word of your choosing is imbued with energy as you speak it. Any spell or magical effects that cause a creature of your choosing within range to be {@condition restrained}, {@condition paralyzed}, or to reduce their speed to 0 are ended. In addition, that creature may spend 5 feet of movement on its next turn to escape any non-magical restraints, grapple, or imprisoning device (e.g. a cage).",
+				"If the target is adjacent to a hostile creature, you may teleport them to be adjacent to you."
+			]
+		},
+		{
+			"name": "Prayer of the Lightborn Cage",
+			"source": "KinksAndCantrips",
+			"page": 176,
+			"level": 8,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "5 lengths of gold chains, each worth at least 250 gp, which the spell consumes",
+					"cost": 25000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"Calling forth a fragment of the Lightborn Cage, you enact a ritual of binding to seal away a great evil. The ritual requires 5 participants to concentrate on the spell, including yourself, which need to be arranged equidistant from each other within range of the target for the duration of this spell's casting. Once complete the target is wrapped in chains of pure golden light that bind its physical form to where it was located when the ritual completes. While {@condition restrained} in this way, the target cannot move any portion of its body other than to speak or look around.",
+				"The chains also bind away the target's power, forming a divine barrier around it in much the same way the Lightborn Cage  does for the Malitic Deities. The target may not cast spells or use any of its abilities, feats, features, traits, or magic items. It may however speak and see, so it is free to converse, but it cannot manifest power to magically manipulate those that interact with it. The target is also immune to all damage and spells while bound in this way as spells from outside the binding also cannot penetrate inside of it.",
+				"While casting this spell you must choose an object to serve as a keystone to the binding. This item must be at least 6 cubic inches in volume and the spell carves a small golden glyph into the item to mark it as the keystone. If the keystone is destroyed, the binding is ended and the target is released.",
+				"The chains themselves may not be dispelled, but a creature may attempt to dispel the binding by targeting the keystone object. The rules for dispelling the binding this way is the same as trying to dispel this spell normally."
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Provoke Drop",
+			"source": "KinksAndCantrips",
+			"page": 176,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a token of neglect"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You draw on the sensation a creature is experiencing and remove it to leave a hole of withdrawal. Target creature that has at least 1 point of either Pleasure or Pain must make a Charisma saving throw.",
+				"On a failure, roll a number of {@dice d6} equal to its total amount of Pleasure and Pain, to a maximum of 8. The creature takes psychic damage equal to the result and then loses all of its Pleasure and Pain. On a success, the target takes half damage and removes only half of their Pleasure and Pain. In either case, until the spell ends, when the creature makes an ability check, attack roll, or saving throw it must roll a {@dice d4} and subtract the number rolled from the result."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or higher level, the maximum amount of {@dice d6} that can be rolled increases by 1 for each slot level above 4th"
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Ragged Edge",
+			"source": "KinksAndCantrips",
+			"page": 177,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ring made of rubber"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You wrest control from a creature their capacity to attain carnal bliss. The target must make a Wisdom saving throw. On  a failure, they may not gain Pleasure that would bring their total points over their maximum and each time they would be affected by an ability that utilizes their Pleasure, they must succeed on a Wisdom saving throw or their Pleasure is counted as 0 for that ability."
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Rejuvenating Spray",
+			"source": "KinksAndCantrips",
+			"page": 177,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a spray of a creamy white substance which has been blessed by the life giving magicks of either nature or Nodsvto. This can take any form appropriate aesthetically, such as a spray of semen or an explosive burst of lactation.",
+				"Each creature in a 15-foot cone regains hit points equal to {@dice 2d4} + your spellcasting ability modifier + your Pleasure. You then must make a Constitution saving throw, losing half your total Pleasure on a failure. The DC for this saving throw is equal to 8 + your total Pleasure."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Reprimand",
+			"source": "KinksAndCantrips",
+			"page": 177,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you can take when a creature makes an attack against you or targets you with a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You let loose a scathing chastisement upon a creature you can see. The target has disadvantage on attack rolls against you and you have advantage on saving throws you are required to make for spells they cast until the end of their next turn."
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			]
+		},
+		{
+			"name": "Restricting Barbs",
+			"source": "KinksAndCantrips",
+			"page": 177,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the stem of a rose"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You point at a spot on the ground that you can see within range, causing an eruption of vines to spring forth from where you designate. All large or smaller creatures within 5 feet sphere of that point must make a Dexterity saving throw. On a failure the vines twist about the form of the target, winding about their limbs and pushing into their orifices. The vines then sprout barbs, enticing any affected creature to hold perfectly still lest they tear their flesh upon them. When a creature ensnared by the vines makes an attack, casts a spell, or uses an item, they take {@damage 1d6} piercing damage. If an ensnared creature moves its full body more than an inch in any direction they take {@damage 8d6} piercing damage and the effect ends as they break free."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th or higher level, the damage for making an attack, casting a spell, or using an item increases by {@dice 1d6} for every two slot levels above 4th. In addition, the damage for moving increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Ruined Ecstasy",
+			"source": "KinksAndCantrips",
+			"page": 178,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you may take when a creature you can see uses an ability or benefits from an effect that is empowered by Pleasure points"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You attempt to prevent a creature from attaining satisfaction through pleasure. The target must make a Wisdom saving throw. On a failure, the creature loses all Pleasure it has accrued, and gains no benefit from the ability or effect this spell was cast in reaction to. On a success, the creature loses half of its accrued Pleasure points, but the action or effect continues as normal afterward."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Safeguard Existence",
+			"source": "KinksAndCantrips",
+			"page": 178,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to a creature you can see within range suffering an effect that would kill it (except rolling a 3rd failed death saving throw)"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"In a desperate maneuver, you shunt aside the worst of death's intent and leave a creature on death's door. Rather than dying, the target creature falls to 0 hit points, becomes {@condition unconscious}, and has 2 failed death saving throws."
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Shadowbind",
+			"source": "KinksAndCantrips",
+			"page": 178,
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a token of hopelessness"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manifest tendrils of darkness from the shadows around you which reach out and try to pull the target into a plane of suffering. The target must succeed on a Strength saving throw or be pulled into a demiplane of utter darkness.",
+				"The demiplane is a space of pure lightlessness filled with tortures of your own devising. When you cast the spell you may choose to have the plane exert torments of either Pleasure or Pain upon the target, but may theme the effects in a manner of your choosing. Depending on which type of torment is chosen, as a bonus action you may have the target suffer the appropriate effect below:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Pain",
+							"entry": "The target gains 1 Pain then suffers necrotic damage equal to its Pain. For each turn beyond the first where the creature would have to make a Constitution saving throw for accruing more than its maximum Pain, it has disadvantage on the saving throw."
+						},
+						{
+							"type": "item",
+							"name": "Pleasure",
+							"entry": "The target gains 1 Pleasure then suffers psychic damage equal to its Pleasure. For each turn beyond the first where the creature would have to make a Constitution saving throw for accruing more than its maximum Pain, it has disadvantage on the saving throw."
+						}
+					],
+					"style": "list-hang-notitle"
+				},
+				"While on the demiplane, the target is {@condition blind}, {@condition incapacitated}, and {@condition restrained}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"restrained"
+			],
+			"savingThrow": [
+				"constitution",
+				"strength"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Shared Suffering",
+			"source": "KinksAndCantrips",
+			"page": 178,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to a creature within range that you can see taking damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"The suffering you're experiencing helps your allies endure their own torment. You may receive the damage the target creature would take in their place. If both you and the target have at least 1 Pain and you have more Pain than the target, or if you have less hit points than the target, you gain resistance to that damage type."
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Shock Collar",
+			"source": "KinksAndCantrips",
+			"page": 178,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small clay jar filled with acid that has a copper rod around an iron rod inside"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You point at a creature within range and attempt to summon a thick band of crackling lightning that encircles their neck.",
+				"The target must make a Charisma saving throw. On a failure you may designate a creature you can see to be protected by the collar of lightning. Each time the target either attacks a protected creature or causes a protected creature to make a saving throw, they suffer {@damage 2d6} lightning damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd or higher level, the damage increases by {@dice 1d6} and you may choose one additional creature to be protected for each slot level above 2nd"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Silencing Counter",
+			"source": "KinksAndCantrips",
+			"page": 178,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"note": "which you take when you see a creature within 60 feet of you casting a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+				"In addition, you manifest a silencing gag on your target, be it a phantasmal strap, a mouth filling phallus, or a glob of latex. Until the gag is removed, the target may not use verbal components of spells and can only speak in unintelligible mumbles. As an action, the target may make a Strength saving throw to remove the gag."
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Solitary Confinement",
+			"source": "KinksAndCantrips",
+			"page": 179,
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch a willing creature and surround them in an opaque sphere-shaped barrier of force. The sphere is immovable, impermeable, invulnerable, and neither sound nor light pass through it. The sphere ensures a breathable atmosphere for the creature inside, but no air passes through the barrier. Nothing can penetrate the confines of the sphere, including teleportation or magic that allows planar travel. You may extend the duration of this spell by expending an additional spell slot. The duration is extended by a number of hours equal to the level of spell slot spent."
+			]
+		},
+		{
+			"name": "Soporific Rain",
+			"source": "KinksAndCantrips",
+			"page": 179,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bottle of ether"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Until the spell ends, droplets of sleep-inducing rain fall in a 20-foot-tall cylinder within a 60-foot cylinder centered on a point you can see within range. The area is {@quickref Vision and Light||2||lightly obscured} for the duration.",
+				"When you cast this spell and as an action on each of your turns, roll {@dice 11d8}; the total is how many hit points of creatures this spell can affect. Creatures within the area are affected in ascending order of their current hit points (ignoring {@condition unconscious} creatures).",
+				"Starting with the creature that has the lowest current hit points, each creature affected by this spell falls {@condition unconscious} until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, roll an additional {@dice 2d8} for each slot level above 4th. If this spell is cast using a 9th level spell slot, affected creatures can not be awakened until the spell ends."
+					]
+				}
+			],
+			"miscTags": [
+				"OBS",
+				"SGT"
+			]
+		},
+		{
+			"name": "Sour Stomach",
+			"source": "KinksAndCantrips",
+			"page": 179,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of sheepskin"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You manifest a vile substance within the target's stomach, attempting to sicken them. The target must make a Constitution saving throw. On a failed save the target takes {@damage 2d8} poison damage, becomes {@condition poisoned} for 1 minute, and becomes {@condition stunned} until the end of its next turn as it vomits. On a success the target takes half as much damage and has disadvantage on attack rolls until the end of its next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"stunned"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Spectral Spreader",
+			"source": "KinksAndCantrips",
+			"page": 179,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon an ethereal spreader bar which clamps to the ankles of your target. Until the spell ends, the target's speed is halved and if you make an attack roll for an attack that benefits from or adds to the target's Pleasure points, you may make that attack with advantage. If the target would make a saving throw for an effect that adds, removes, or benefits from their Pleasure, they make that saving throw with disadvantage. The target may make a Strength saving throw against your spell save DC at the end of their turn. On a successful saving throw, this spell ends."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Statue of Torment",
+			"source": "KinksAndCantrips",
+			"page": 179,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "concrete dust"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 30
+					}
+				}
+			],
+			"entries": [
+				"The target of this spell becomes suffused with magic that hardens its form, petrifying it over the course of the casting.",
+				"The target remains in the position they were in when they were {@condition petrified} for the duration. The {@condition petrified} form can be made from any of the following materials: latex, rubber, stone, wood, or metal. An unwilling creature must make a Constitution saving throw to avoid this effect. The spell has no effect on a shapechanger or a creature with 0 hit points.",
+				"For the purposes of this spell, the target is considered {@condition petrified} but can sense their surroundings and they are immune to all damage.",
+				"If the person who cast this spell {@condition petrified} themselves, they may remove the petrification by {@status concentration||concentrating} for 1 minute. The spell also ends if the creature that cast it is killed or spends an action to end it. A {@spell Remove Curse}, {@spell Greater Restoration}, or {@spell Wish} spell also ends it."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level, the duration is 1 year. When you cast this spell180 Spells Kinks & Cantrips using a spell slot of 9th level, the spell lasts until it is ended by one of the methods mentioned above"
+					]
+				}
+			],
+			"conditionInflict": [
+				"petrified"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Strip Bare",
+			"source": "KinksAndCantrips",
+			"page": 180,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"With an uttered command, you attempt to strip the target of the worldly adornments that protect them. A target humanoid you can see within range must make a Charisma saving throw. On  a failure all mundane armor and clothing they are wearing drops to the floor around them, leaving them naked and exposed."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you may target an additional creature for each slot level above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Subbadigitation",
+			"source": "KinksAndCantrips",
+			"page": 180,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"In a display of submission, you create a minor magical effect.",
+				"You may do any of the following for the duration:",
+				{
+					"type": "list",
+					"items": [
+						"Cause a creature that you are intimate with to become erect or wet",
+						"Cause one of your orifices to self-lubricate, even if it normally can't",
+						"Cause your eyes to moisten or cry",
+						"Ensure blood flow to your limbs and extremities, no matter how tightly they are tied",
+						"Release milk from your nipples or cause them to become erect",
+						"Remove your gag reflex",
+						"Slightly alter your facial features to appear more cute, tempting, or vulnerable such as make your eyes appear larger or cause your cheeks to flush"
+					]
+				}
+			]
+		},
+		{
+			"name": "Subspace",
+			"source": "KinksAndCantrips",
+			"page": 180,
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A finely crafted collar worth at least 250 gp, which the spell consumes",
+					"cost": 25000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You conjure an extradimensional space that exists for the duration. The entrance is summoned where you are standing when the spell is cast and you are pulled through to the space when it is created. The entrance portal is 10 feet tall and 5 feet wide and may look like anything you desire, but is illusory save for its ability to transport creatures to the extradimensional space. When you cast the spell, you may choose any number of creatures who are able to use the entrance so long as the portal remains open. You may open or close the entrance as an action.",
+				"The extradimensional space can be up to 50,000 cubic feet in size and is shaped to match a space of your imagination when the spell is cast. This space can range from an open area such as a wide forest to a labyrinthine structure made of many rooms with furnishings to match, so long as it is no larger than the allowable maximum size. This space also is attended to by 100 attendants whose appearance you choose when the spell is cast. These servants are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. The servants may not leave this space, and vanish when the spell ends. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.",
+				"When a creature that has accrued either their maximum Pleasure or Pain within the space finishes a long rest inside it, they remove all levels of {@condition exhaustion} and make Wisdom and Charisma saving throws with advantage for the duration of this spell.",
+				"Similarly, when a creature that has brought another creature to either their maximum Pleasure or Pain within this space finishes a long rest within the space, they become immune to being {@condition charmed} or {@condition frightened}, increase their maximum hit points by {@dice 2d10}, and are healed by the same amount.",
+				"All of the previous effects stop when this spell ends."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Telepathic Binding",
+			"source": "KinksAndCantrips",
+			"page": 180,
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of rope which relates to an important memory of a loved one"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You weave your psychic presence into those of up to eight willing creatures, creating a link between them. The link creates a sense of being bound up in ropes by a cherished partner, safe and cared for, but does not affect the physical capabilities of those affected.",
+				"Until the spell ends the targets can communicate telepathically with each other, despite any languages they may or may not understand. This communication works over any distance, including across planes of existence.",
+				"When a creature takes damage while affected by this spell, another creature affected by this spell can as a reaction take half of that damage in place of the original creature. The creature using its reaction for this effect must be within 60 feet of the creature taking damage and damage transferred in this manner is taken as psychic damage to the receiving creature.",
+				"If a creature affected by this spell uses an ability, effect, or spell that determines a value based on its Pain or Pleasure it may use the Pain or Pleasure of any other creature affected by this spell within 60 feet of it"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Addiction to Suffering",
+			"source": "KinksAndCantrips",
+			"page": 181,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a piece of a dragon's tail and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature they become addicted to the sensation of suffering and find their abilities diminished if they are not experiencing pain. At the same time, they are better able to withstand punishment due to their increased pain tolerance. The target has disadvantage on skill checks unless they have at least 2 Pain. In addition, any damage the target would receive is lowered by the amount of Pain they have and they lose 1 Pain at the end of each of their turns rather than the normal pace."
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Awakening Phrase",
+			"source": "KinksAndCantrips",
+			"page": 181,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a folded piece of parchment with a word written on it and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When a creature is imprinted with this sigil, speak a particular word or short phrase to link with it. This is known as an awakening phrase. When the awakening phrase is spoken and heard by the creature imprinted with this sigil, they enter a fugue state and become intensely submissive toward the creature that spoke the awakening phrase. While in this state the imprinted creature may be told a course of action by the creature that spoke the awakening phrase that is not obviously harmful. On its turn, the imprinted creature will do its best to complete the course of action it was given. If it is not given a course of action the imprinted creature will stand {@condition incapacitated} in a stupor. No other effect may magically compel the imprinted creature while it is in this state.",
+				"The creature that spoke the awakening phrase to put the imprinted creature into the fugue state may speak the awakening phrase again to return the imprinted creature to normal. The imprinted creature remembers nothing that occurred while it was in this fugue state. If the fugue state lasts more than 24 hours the imprinted creature must make a Charisma saving throw, returning to normal consciousness on a success."
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Axon Link",
+			"source": "KinksAndCantrips",
+			"page": 182,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "two links of chain that are attached and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature, it may be paired with an Axon Link sigil upon another creature within 60 feet of the target. In turn, that creature's Axon Link sigil is paired with the target's sigil. When a creature imprinted with an Axon Link sigil gains any amount of Pleasure or Pain, the creature who has a sigil paired with that creature gains an equal amount of Pleasure or Pain."
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Ecstatic Pulse",
+			"source": "KinksAndCantrips",
+			"page": 182,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a vial of cream and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature you implant a potent bundle of magic-fueled sensation which can be released at a moment's notice. As a bonus action on your turn while you are within 120 feet of the imprinted creature you may speak a command word and have the sigil flair before depositing its energy into the target. When it does so, the target's Pleasure is set to its maximum and it becomes {@condition stunned} as it is overwhelmed. From that time and until the imprinted creature has no Pleasure, it loses 2 Pleasure at the end of each of its turns, cannot gain Pleasure, and it is immune to being {@condition stunned}."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Excruciation",
+			"source": "KinksAndCantrips",
+			"page": 182,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a sprig of sharp nettle and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature they perceive all pleasurable sensations as painful. The intensity of this pain is equal to the pleasure they would feel, but even an affectionate massage will be felt as uncomfortable. While imprinted with this sigil the target cannot gain Pleasure and if they would gain any amount of Pleasure they instead receive an equal amount of Pain."
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Exposing Impulse",
+			"source": "KinksAndCantrips",
+			"page": 182,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a ripped piece of clothing and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature they become unable to cover themselves fully, always leaving their genitals and other erogenous zones exposed for any who wish to make use of them. They will only choose to wear clothes that leave uncovered those regions of the body and they will either uncontrollably maneuver their hands away or otherwise bind themselves so they may not resist the use of or hide their body.",
+				"While imprinted with this sigil the target has the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"They have disadvantage on any Strength or Dexterity skill checks or saving throws related to gaining Pleasure.",
+						"If a creature within 30 feet of the imprinted creature were to be targeted by an effect that charms them or would give them Pleasure, as a reaction you may have the imprinted creature become the target of that effect instead. The creature creating the effect must be able to see the imprinted creature to use this reaction. You may give the imprinted creature advantage on saving throws related to resisting that charm if you wish. If the range of the effect would not allow the imprinted creature to be targeted, the effect continues with the original target instead."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Ocular Sensitivity",
+			"source": "KinksAndCantrips",
+			"page": 183,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a glass eye and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+			"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature they become acutely aware of those around them that are assessing their potential to provide carnal pleasure to them. The target gains a latent psychic ability to know when another creature is looking at them lasciviously and what the gazer is imagining doing with them. While imprinted with this sigil the target has the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"They have advantage on Charisma skill checks related to seducing someone that is lasciviously assessing them.",
+						"If they are looked upon in such a manner by more than 2 creatures, they gain 1 Pleasure for each minute those creatures spend fixated upon them."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Pleasurably Numb",
+			"source": "KinksAndCantrips",
+			"page": 183,
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a vial of anesthetic and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"When this sigil is imprinted on a creature a bond is formed between the pleasure centers of their brain and their higher cognitive functions. As the target gains increasing levels of physical pleasure they grow less and less conscious of the world around them, until eventually they are left a trembling mass that is incapable of defending itself. The target's maximum Pleasure becomes 10 or its current maximum (whichever is higher), it has disadvantage on the Constitution saving throw for exceeding its maximum Pleasure, and it gains the following effects depending on how much Pleasure they have (effects are cumulative with all previous effects):",
+				{
+					"type": "table",
+					"caption": "Pleasurably Numb Effect Table",
+					"colLabels": [
+						"Pleasure", 
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center no-wrap",
+						"col-11"
+					],
+					"rows": [
+						[
+						  "2+",
+						  "The creature is resistant to being {@condition charmed} or {@condition frightened}."
+						],
+						[
+						  "4+",
+						  "The creature has resistance to psychic damage and has advantage on Intelligence, Wisdom, and Charisma saving throws."
+						],
+						[
+						  "6+",
+						  "The creature's mind cannot be read nor can it be magically compelled into a course of action."
+						],
+						[
+						  "8+",
+						  "The creature is {@condition incapacitated}."
+						]
+					]
+				}
+			],
+			"damageResist": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"charisma",
+				"constitution"
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Sterility",
+			"source": "KinksAndCantrips",
+			"page": 184,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a small copper amulet in the shape of a \"T\" and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+			 "As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+		
+				"When this sigil is imprinted on a creature they become unable to conceive children via any means."
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Thaumic Sigil: Ziicubus' Kiss",
+			"source": "KinksAndCantrips",
+			"page": 184,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute",
+					"note": "ritual"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a butterfly wing and 100gp worth of precious gems, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As part of casting this spell, a sigil is imprinted onto the skin of the target. This sigil can neither be removed nor will an illusion mask its presence. When this spell ends the sigil fades. A creature may only be marked with only one Thaumic Sigil at a time and any subsequent Thaumic Sigil marking causes the previous sigil to vanish. An unwilling creature may make a Charisma saving throw, on a success they prevent the sigil from being applied. This effect may only be ended by the spells {@spell Greater Restoration} or {@spell Wish}.",
+				"A sigil commonly used by Ziicubus to create a pliant stable of prey to feed upon, when this sigil is imprinted on a creature they begin to crave physical pleasure without end and become susceptible to mental manipulation. The target has disadvantage on saving throws made to resist being {@condition charmed}.",
+				"In addition, the target has advantage on Constitution saving throws for exceeding its maximum Pleasure, it may have a maximum Pleasure of 10 or its current maximum (whichever is higher), and as a bonus action on its turn it may gain a number of temporary hit points equal to its current Pleasure."
+			],
+			"savingThrow": [
+				"charisma",
+				"constitution"
+			],
+			"miscTags": [
+				"ADV",
+				"THP",
+				"UBA"
+			]
+		},
+		{
+			"name": "Timberous Steed",
+			"source": "KinksAndCantrips",
+			"page": 184,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tree sapling or seed"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Tree barked tendrils erupt from the ground beneath the target's feet, wrapping about themselves to form a horse-like creature made of wood. As part of this process, the wood ensnares them, binding them astride the creature's back as one would if they were riding a horse. However, where a saddle would be affixed is instead an agonizing ridge which digs painfully into their perineum and genitals as they are pressed into it by their own body weight.",
+				"A medium or smaller creature must make a Dexterity saving throw. On a failure, the target is bound atop of and considered riding the steed. The creature uses the statistics for a riding horse except it is a construct instead of a beast, has 50 hit points, and an AC of 14. The target may not dismount from the steed until the spell ends, and if they are removed from atop the steed it crumbles into useless wood scraps. When the target suffers damage or as an action on its turn, it may make a Strength saving throw, ending the effect and breaking free on a success.",
+				"The steed's inititative matches its rider and it takes its turn to just before the rider does. You may control the steed's movement on its turns, but may not direct the steed to carry its rider into hazardous terrain such as lava or over a cliff. When the steed ends a turn in which it moved at least 30 feet, its rider gains 1 Pain. In addition, while the target is affixed atop the steed, they do not suffer the negative effects for accruing more",
+				"Pain than their maximum."
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Torturous Droplet",
+			"source": "KinksAndCantrips",
+			"page": 185,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You summon and fling a single drop of water at high velocity.",
+				"On a hit, the target takes {@damage 1d10} piercing damage. If you target a creature that you hit with this spell in your previous turn, you may attempt to hit the exact spot on the creature the droplet hit previously, causing tremendous pain. When you choose to do so you suffer a -5 penalty to the attack roll, but if you score a hit the target gains 1 Pain and you deal bonus damage equal to the target's Pain plus your spellcasting modifier.",
+				"The force of the droplet increases when you reach higher levels. This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+			],
+			"scalingLevelDice": {
+				"label": "piercing damage",
+				"scaling": {
+					"1": "1d10",
+					"5": "2d10",
+					"11": "3d10",
+					"17": "4d10"
+				}
+			},
+			"damageInflict": [
+				"piercing"
+			],
+			"miscTags": [
+				"SCL",
+				"SMN"
+			]
+		},
+		{
+			"name": "Truth-bearing Noose",
+			"source": "KinksAndCantrips",
+			"page": 185,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lasso"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You fasten an aetheric rope around the neck of a creature in range, with a trailing end leading back to your hand. The rope is intangible but visible, and is broken if the creature moves out of range. The target must succeed on a Charisma saving throw or become {@condition charmed} by you for the duration of the spell. While {@condition charmed} in this way, the creature cannot tell a lie. If you focus for a minute on the creature, you may attempt to delve into its mind for hidden secrets. When you do so the creature must make a Wisdom saving throw. If it fails, you may telepathically ask one question which can be answered with either \"yes\" or \"no\". The creature must answer this question truthfully. The spell ends if the creature takes damage."
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"charisma",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Vortex Curse",
+			"source": "KinksAndCantrips",
+			"page": 185,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You fashion a funnel gag made of aetheric energy which attempts to strap itself to a creature within range. The target must succeed on a Strength saving throw or the gag becomes fastened to the mouth of the target. When you cast this spell, choose a damage type from among acid, cold, fire, force, lightning, necrotic, radiant, or thunder. When another creature takes damage of the chosen type within 30 feet of the gagged target, the gagged creature suffers half as much damage as the original target as the funnel draws in the specified energy.",
+				"A creature gagged in this way may attempt to remove the gag by using an action to make a Strength saving throw, ending the effect on a success."
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Ward's Piercing Barrage",
+			"source": "KinksAndCantrips",
+			"page": 186,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a slew of tiny sharp needles, which float around you waiting for your command. When you cast this spell, you summon a cloud of needles which orbit you harmlessly.",
+				"As a bonus action you can will a number of the needles to strike a creature within range, embedding themselves painfully in their flesh. When you do so make a ranged spell attack roll against the target, including modifiers such as advantage and disadvantage. Rather than using the result to determine if the spell hits, the creature suffers piercing damage equal to the result automatically. If you roll a natural 20 on the attack roll, double the amount of damage dealt by this attack."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you deal an additional {@damage 1d6} piercing damage for each slot above 2nd. In addition, if this spell was cast at 4th level or higher you double your ranged spell attack modifier when you make the attack roll."
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SMN",
+				"UBA"
+			]
+		},
+		{
+			"name": "Whip Strike",
+			"source": "KinksAndCantrips",
+			"page": 186,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a braided piece of leather cord"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure a spectral whip and lash out, making a melee spell attack roll against a creature within 10 feet of you. On a hit the target suffers slashing damage equal to {@dice 1d6} + the target's current Pain.",
+				"This spell's damage increases when you reach certain levels.At 5th level, the melee attack deals an additional {@damage 1d6} slashing damage to the target on a hit. This increases by an additional {@dice 1d6} at 11th level ({@dice 3d6}) and 17th level ({@dice 4d6}).",
+				"This spell can be used for multiple attacks when you reach higher levels: two attacks at 5th level, three attacks at 11th level, and four attacks at 17th level. If you hit a creature with this spell more than once on your turn, at the end of your turn you may have that creature gain 1 Pain."
+			],
+			"scalingLevelDice": {
+				"label": "slashing damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "1d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"slashing"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Yank",
+			"source": "KinksAndCantrips",
+			"page": 186,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a leash"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Using an ephemeral leash, you pull a willing creature to an unoccupied space adjacent to you. Despite this being a forced move, this movement still provokes opportunity attacks."
+			]
+		},
+		{
+			"name": "Zipper",
+			"source": "KinksAndCantrips",
+			"page": 186,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a clothespin and a bit of twine"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You conjure a series of wooden clothespins which are fastened together in a line via twine. The clothespins attempt to attach themselves to the skin of the target where they will wait to be removed at the perfect time to cause maximum pain.",
+				"The target must make a Dexterity saving throw. On a failure the clothespins become attached to the target. As a reaction to the target attempting to make an ability check or attack roll, you or another creature of your choosing within 15 feet of the target may magically pull on the string to rip off the clothespins. When  they do so, the target takes 2 points of force damage for each point of Pain they have and make that attack roll or ability check with disadvantage, after which point the clothespins vanish.",
+				"A target may be under the effects of this spell multiple times, but each reaction only removes 1 set of clothespins."
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Zone of Comfort",
+			"source": "KinksAndCantrips",
+			"page": 186,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You designate an area around you as your zone of comfort. This zone may appear as you wish, but is obviously an illusionary effect to any who perceive it and it never obscures vision. While within this zone creatures are immune to being {@condition frightened}, have advantage on saving throws against being {@condition charmed}, and may choose to not gain Pain or Pleasure if they do not wish to.",
+				"This spell ends when you leave the zone. Any creatures that spent the full duration of this spell within the zone gain {@dice 4d6} temporary hit points which fade after 1 hour."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher the temporary hit points gained increases by {@dice 2d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"miscTags": [
+				"THP"
+			]
+		}
+
+	]
+}
