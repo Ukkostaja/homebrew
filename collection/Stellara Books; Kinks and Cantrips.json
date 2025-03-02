@@ -17,6 +17,10 @@
 				"version": "0.9.0"
 			}
 		],
+		"optionalFeatureTypes": {
+			"BH:P": "Bestial Heritage: Predacious",
+			"BH:Q": "Bestial Heritage: Quarry"
+		},
 		"status": "wip",
 		"dateAdded": 1740585348,
 		"dateLastModified": 1740585348,
@@ -54,6 +58,475 @@
 			]
 		}
 	] ,
+	"optionalfeature": [
+		{
+			"name": "Amphibious",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You can breathe both air and water"
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Pouncing Leap",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"Your jump distance is doubled and the next attack you make after jumping at least 10 feet is made with advantage."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Camouflage",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have advantage on Dexterity (Stealth) checks that rely on sight."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Clawed/Taloned",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"If you hit with an unarmed attack, you deal 1d4 plus your Strength modifier plus your proficiency bonus slashing damage instead."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Clenching Jaws",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"Once per turn, as an attack, you may make an unarmed attack with your bite. On a hit, you deal 1d6 plus your Strength modifier and lock onto the target with your jaws, grappling them."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Darkvision",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You can see in dim light within 60 ft. of you as if it were bright light and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Fins/Flippers",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have a swim speed equal to your walking speed."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Hurling Throw",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"As an action, you may throw a creature grappled by you a number of feet equal to 3 times your Strength modifier."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Menacing",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"entries": [
+				"You gain proficiency in the Intimidation skill."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Keen Sight",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have advantage on Wisdom (Perception) checks that rely on sight."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Keen Senses",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Pack Tactics",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have advantage on melee attack rolls against a creature if at least one of your allies is within 5 ft. of the creature and the ally isn’t incapacitated."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Quiet Step",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have advantage on Dexterity (Stealth) checks that rely on sound."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Rush",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"If you move at least 20 feet towards a creature before hitting it with a melee attack, that creature must make a Strength saving throw against a DC equal to 8 + your Strength modifier + your proficiency bonus. On a failed save, that creature is knocked prone."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Thick Skin",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"Add 1 to your AC."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Tentacled",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"Add 5 ft. to your melee attack range, you have advantage when attempting to either grapple a creature or keep a creature grappled."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Wall Climbing",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You can climb difficult surfaces without needing to make an ability check."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Winged",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have a flying speed of 40 feet. To use this speed, you can’t be wearing Medium or Heavy armor."
+			],
+			"featureType": [
+				"BH:P"
+			]
+		},
+		{
+			"name": "Adorable",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You have advantage on Charisma (Persuasion) checks against creatures that can see you."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Alert to Danger",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You can’t be surprised while you are conscious and creatures don’t gain advantage on attack rolls against you as a result of being unseen by you."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Amphibious",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"entries": [
+				"You can breathe both air and water."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Armor Plating",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"Add 2 to your AC and subtract 5 ft. from your walking speed."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Bounding Leap",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"Your jump distance is tripled."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Burrowing",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You can burrow through dirt and soft ground at a pace equal to your speed, but must end your turn above ground if you do so. Any hole you create is closed behind you as you move. If you cannot end your turn above ground due to an unexpected effect or situation during this movement, you are immediately shunted to the nearest unoccupied space above you."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Camouflage",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have advantage on Dexterity (Stealth) checks that rely on sight."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Evasive Dash",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"After you take the Dash action, you have advantage on Dexterity saving throws against effects you can see until the end of your next turn."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Darkvision",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You can see in dim light within 60 ft. of you as if it were bright light and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Fins/Flippers",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have a swim speed equal to your walking speed."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Fleet Footed",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"Your walking speed is increased by 10 feet."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Hyper Aware",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You gain proficiency in the Wisdom (Perception) skill and double your proficiency bonus for determining your passive perception."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Keen Sight",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have advantage on Wisdom (Perception) checks that rely on sight."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Keen Senses",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Nimble Squeeze",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have advantage on ability checks and saving throws to escape being grappled."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Prehensile Tail.",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have a tail that can function as another hand. It is capable of holding items and grabbing things, but not manipulating things that require fine motor skills."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Quiet Step",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have advantage on Dexterity (Stealth) checks that rely on sound."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Quills",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"When a melee attack targeting you yields a result more than 5 below your armor class you may deal piercing damage to the attacker equal to your proficiency bonus."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Regeneration",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"Any limbs you lose will slowly regrow over the course of 60 days."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Sure Footed",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have advantage on Strength and Dexterity saving throws against effects that would knock you prone."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Tremorsense",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You can detect and pinpoint the origin of vibrations within 60 feet, provided that the source of the vibrations is in contact with the same ground or similar substance as you."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Wall Climbing",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You can climb difficult surfaces without needing to make an ability check."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Wide Vision",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You can see in all directions around you."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		},
+		{
+			"name": "Winged",
+			"source": "KinksAndCantrips",
+			"page": 90,
+			"entries": [
+				"You have a flying speed of 50 feet. To use this speed, you can’t be wearing Medium or Heavy armor."
+			],
+			"featureType": [
+				"BH:Q"
+			]
+		}
+	],
 	"race" : [
 		{
 			"name": "Cubeling",
