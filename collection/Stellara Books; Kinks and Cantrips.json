@@ -428,7 +428,7 @@
 			]
 		},
 		{
-			"name": "Prehensile Tail.",
+			"name": "Prehensile Tail",
 			"source": "KinksAndCantrips",
 			"page": 90,
 			"entries": [
@@ -632,6 +632,177 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Predacious Furfolk",
+			"source": "KinksAndCantrips",
+			"page": 88,
+			"lineage": "VRGR",
+			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+				"size": [
+				"S",
+				"M"
+			],
+				"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Bestial Heritage",
+					"featureType": [
+						"BH:P"
+					],
+					"progression": {
+						"1": 3
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Furfolk tend to live roughly as long as their human counterparts."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Choose a size, either Small or Medium, fitting to your bestial heritage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bestial Heritage",
+					"entries": [
+						"When creating a Predacious Furfolk character, you may gain three traits of your choice from {@filter Optional Features|optionalfeatures|Feature Type=BH:P}. In addition your creature type is beast as well as humanoid"
+					]
+				}
+				],
+				"fluff":
+				{
+					"entries": [
+						"It is hard to describe Furfolk, for they come in a wide variety of shapes and sizes. Their ancestry can and does range from birds to wolves, from octopi to lizards. Whatever their heritage, they all share a mixed humanoid/bestial physique and possess qualities from their bestial lineage to accompany it. Some end up closer to their bestial ancestors, with only enough humanoid function to wield weapons and armor, while others may appear almost wholly humanoid save for few minor animalistic details.",
+						"Further, as the animal kingdom is split between predators and prey, Furfolk come in two primary varieties which each hold a particular archetype of their ancestry. Though inherently derived from the various hunters that stalk the land, Predacious Furfolk need not be inherently violent or even desire to eat meat. They simply retain the physical characteristics of their genetic past."
+					]
+				}
+			
+		},
+		{
+			"name": "Quarry Furfolk",
+			"source": "KinksAndCantrips",
+			"page": 89,
+			"lineage": "VRGR",
+			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+				"size": [
+				"S",
+				"M"
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Bestial Heritage",
+					"featureType": [
+						"BH:Q"
+					],
+					"progression": {
+						"1": 3
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Furfolk tend to live roughly as long as their human counterparts."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Choose a size either Small or Medium, fitting to your bestial heritage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bestial Heritage",
+					"entries": [
+						"When creating a Quarry Furfolk character, you may gain three traits of your choice from {@filter Optional Features|optionalfeatures|Feature Type=BH:Q}. In addition your creature type is beast as well as humanoid."
+						]
+				}
+			],
+			"fluff": {
+			  "entries": [
+					"It is hard to describe Furfolk, for they come in a wide variety of shapes and sizes. Their ancestry can and does range from birds to wolves, from octopi to lizards. Whatever their heritage, they all share a mixed humanoid/bestial physique and possess qualities from their bestial lineage to accompany it. Some end up closer to their bestial ancestors, with only enough humanoid function to wield weapons and armor, while others may appear almost wholly humanoid save for few minor animalistic details.",
+					"In contrast with their Predacious Furfolk cousins, Quarry Furfolk hail largely from the supposedly \"harmless\" critters that skitter to and fro. Theirs is a history of being hunted and though that time is largely past, they have kept the physical abilities that helped their ancestors survive the hunt."
+				]
+			}
+			
 		}
 	],
 	"spell": [
