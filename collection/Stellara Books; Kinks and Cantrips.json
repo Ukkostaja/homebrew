@@ -23,7 +23,7 @@
 		},
 		"status": "wip",
 		"dateAdded": 1740585348,
-		"dateLastModified": 1740585348,
+		"dateLastModified": 1740941908,
 		"edition": "classic"
 	},
 	"condition": [
@@ -7478,5 +7478,841 @@
 				}
 			]
 		}
+	],
+	"monster": [
+		{
+			"name": "Amber Giant",
+			"source": "KinksAndCantrips",
+			"page": 202,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d12 + 96"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 22,
+			"int": 12,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell Charm Person|PHB}",
+						"{@spell Entangle|PHB}",
+						"{@spell Snare|XGE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Earthbind|XGE}",
+							"{@spell Hold Person|PHB}",
+							"{@spell Wrath of Nature|XGE}"
+						],
+						"1e": [
+							"{@spell Barkskin|PHB}",
+							"{@spell Tree Stride|PHB}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The giant gains advantage on Wisdom ({@skill Perception|PHB}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two Club attacks."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hurl Honey",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 60/240 ft., one target. {@h}30 ({@damage 4d10 + 8}) bludgeoning damage and the target becomes {@condition restrained}. At the end of their turn, a creature can make a {@dc 15} Strength saving throw to break out from being {@condition restrained}"
+					]
+				}
+			],
+			"attachedItems": [
+				"club|phb"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Angel of the All Soul",
+			"source": "KinksAndCantrips",
+			"page": 203,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "celestial",
+				"tags": [
+					"of parumen"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d6 + 72"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"dex": "+10",
+				"int": "+9",
+				"wis": "+11",
+				"cha": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from Nonmagical Attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"all; telepathy 120 ft."
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The angel innate spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell Alter Self}",
+						"{@spell Animal Shapes}",
+						"{@spell Disguise Self}",
+						"{@spell Polymorph}",
+						"{@spell Shapechange}"
+					],
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The angel has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Fragment of All Forms",
+					"entries": [
+						"When the angel casts the {@spell Animal Shapes|PHB}, {@spell Polymorph|PHB}, or {@spell Shapechange|PHB} spells it does not assume the hit points of its new form, but rather keeps its current hit points. The angel may also concentrate on up to 3 transmutation spells at once."
+					]
+				},
+				{
+					"name": "Self-Determination of Form",
+					"entries": [
+						"The angel may choose to be immune to any spell or effect that would alter its form."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The angel makes three melee attacks."
+					]
+				},
+				{
+					"name": "Paw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5ft., one target. {@h}6 ({@damage 1d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shifting Sentinel",
+					"entries": [
+						"When a creature within 30 feet of the angel is hit by an attack or fails a Dexterity saving throw, the angel may allow the creature to move up to its speed in a direction of the angel's choosing. This move may cause the target to be out of range of the attack or effect in which case they are not hit by the attack and the effect concludes without including the creature as a target."
+					]
+				},
+				{
+					"name": "Mercurial Manifestation",
+					"entries": [
+						"When a creature within 120 feet of the angel would change its form, the angel may choose what form the creature takes rather than what was originally intended. The choice must still be a valid choice for the effect causing the transformation"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"B",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Angel of the Maven",
+			"source": "KinksAndCantrips",
+			"page": 204,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "celestial",
+				"tags": [
+					"of takmarka'rung"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 133,
+				"formula": "14d10 + 56"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from Nonmagical Attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"frightened",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"all; telepathy 120 ft."
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The angel's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell Ensnaring Strike}",
+						"{@spell Entangle} (these spells manifest as chains rather than vines)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Counterspell}",
+							"{@spell Forcecage}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The angel has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Beneficial Bindings",
+					"entries": [
+						"Each creature that is {@condition restrained} within 30 ft. of the angel has resistance to all damage."
+					]
+				},
+				{
+					"name": "Restraint Adept",
+					"entries": [
+						"The angel may concentrate on both {@spell Ensnaring Strike|PHB} and {@spell Entangle|PHB} at the same time, but may only concentrate on one instance of each when doing so."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The angel casts both {@spell Ensnaring Strike|PHB} and {@spell Entangle|PHB} then makes one weapon attack, or the angel makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Chained Spear",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage plus 18 ({@damage 4d8}) radiant damage. If the spear is thrown, after the attack is completed the angel may pull it back to its hand by the attached chain."
+					]
+				},
+				{
+					"name": "Banished to Bondage",
+					"entries": [
+						"The angel attempts to cast a creature it has trapped into a more permanent prison. A creature within 5 ft. of the angel must make a {@dc 17} Charisma saving throw. On a failure, the creature is pulled into a demiplane of subjugation.",
+						"While in the demiplane the creature is {@condition restrained} and under the effects of the {@spell Silence|PHB} spell. At the start of each of its turns, it takes {@damage 3d6} cold damage and may repeat the saving throw. On a success, this effect ends and the target returns to the space from which it left, or the nearest unoccupied space if that space is occupied."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Subjugating Sentinel",
+					"entries": [
+						"When a creature that is {@condition restrained} within 5 ft. of the angel would take damage, the angel may have that creature become immune to bludgeoning, piercing, slashing, acid, fire, cold, lightning, and thunder damage until the start of the target's next turn"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"charisma"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"strength"
+			]
+		},
+		{
+			"name": "Angel of the Radiant Chain",
+			"source": "KinksAndCantrips",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "celestial",
+				"tags": [
+					"of lancanos"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from Nonmagical Attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"unconscious"
+			],
+			"languages": [
+				"all; telepathy 120 ft."
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The angel's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell Sunbeam}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Detect Thoughts}",
+							"{@spell Globe of Invulnerability}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The angel has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Chastening Aura",
+					"entries": [
+						"When a creature would gain Pleasure within 30 feet of the angel, the angel gains an equal amount of chastity points instead. The angel may choose whether this aura is active or not at the beginning of its turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The angel makes two melee attacks."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage plus 18 ({@damage 4d8}) radiant damage. The target must succeed on a {@dc 17} Constitution saving throw or gain {@dice 2d6} Pleasure."
+					]
+				},
+				{
+					"name": "Overwhelming Release",
+					"entries": [
+						"The angel channels the pent up pleasurable sensations it has denied, directing them at a singular target. The angel chooses a creature within 5 ft. to brand, spending all of its chastity points to give the target an equal amount of Pleasure in the process (the angel's Chastening Aura has no effect on this). While branded, the creature has no maximum to the amount of Pleasure it can have and any effect that would cause it to lose Pleasure instead causes it to lose half the amount it normally would. Any creature that is branded in this way must make a Constitution saving throw at the beginning of its turn, with the DC equal to their Pleasure total. On a failure, the creature is {@condition stunned} until the start of its next turn. The brand fades after 1 hour, or until it is ended via the {@spell Greater Restoration|PHB} spell. Only one creature may be branded by the angel at a time."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Numbing Sentinel",
+					"entries": [
+						"When a creature within 30 feet of the angel would take damage, and that creature has any amount of Pleasure, the angel may have that creature lose all of its Pleasure to gain resistance to all damage until the end of the angel's next turn"
+					]
+				}
+			],
+			"attachedItems": [
+				"mace|phb"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"conditionInflictSpell": [
+				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Angel of the Relentless Shadow",
+			"source": "KinksAndCantrips",
+			"page": 206,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "celestial",
+				"tags": [
+					"of baskema"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from Nonmagical Attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"unconscious"
+			],
+			"languages": [
+				"all; telepathy 120 ft."
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The angel's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell Vampiric Touch}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Raise Dead}",
+							"{@spell Revivify}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The angel has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Draw Upon Vitality",
+					"entries": [
+						"When a creature loses maximum hit points within 30 feet of the angel, the angel gains an equal amount of mortality points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The angel makes two melee attacks, or makes one melee attack and uses its Dying Grasp."
+					]
+				},
+				{
+					"name": "Sickle",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage plus 18 ({@damage 4d8}) necrotic damage. The target must succeed on a {@dc 17} Constitution saving throw or have their maximum hit points reduced by half the amount of necrotic damage dealt. A creature regains its maximum hit points when it completes a long rest."
+					]
+				},
+				{
+					"name": "Dying Grasp",
+					"entries": [
+						"A creature within 5 ft. of the angel becomes {@condition grappled} as it grabs them by the throat and holds them aloft. A creature that begins its turn {@condition grappled} by the angel must succeed on a {@dc 17} Constitution saving throw or take 18 ({@damage 4d8}) necrotic damage and have their maximum hit points reduced by the same amount. The angel may only have one creature {@condition grappled} at a time."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Unyielding Sentinel",
+					"entries": [
+						"When a creature within 5 feet of the angel would be brought to 0 hit points and the angel has mortality points, the angel can expend all of their mortality points to have that creature be at 1 hit point and gain an amount of temporary hit points equal to the mortality points spent"
+					]
+				}
+			],
+			"attachedItems": [
+				"sickle|phb"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		}
+		
+		
+		
+		
+		
 	]
 }
