@@ -5519,5 +5519,1964 @@
 			]
 		}
 
+	],
+	"background": [
+		{
+			"name": "Meat Marketeer",
+			"source": "KinksAndCantrips",
+			"page": 95,
+			"startingEquipment": [
+				{
+					"_": [
+						"fine clothes|phb",
+						"healer's kit|phb",
+						{
+							"special": "purse",
+							"containsValue": 2000
+						}
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"insight",
+							"medicine"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Insight or Medicine"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two of your choice."
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item fine clothes|PHB}, a {@item healer's kit|PHB}, and a purse containing 20 gp"
+						}
+					]
+				},
+				"Many of the people of Bundheim enjoy the feeling of being objectified. A further subset of these live their lives as functional property, though always consenting as they move from partner to partner. This has created a sort of marketplace where those who wish to be \"owned\" are matched up with those seeking to take ownership.",
+				"This may seem crass and unempathetic, but there are meat marketeers who act as go-betweens for these transactions. Occupying a space somewhere between a match maker and a relationship broker, such merchants work for coin to ensure both property and owner walk away satisfied.",
+				"The factors that each side desires are myriad, from specific kinks and training to physical specifications or skills. This means that a successful meat marketeer has many individuals they are connected with, as the unique requirements make the process a numbers game as much as anything else. Knowing someone who knows someone can net one a successful sale, so keeping friendly with all around them is a common practice of the trade.",
+				"Often these marketeers work in guilds, with each trader getting a slice of the total sale after the guild itself has taken its cut. These guilds can be powerhouses of politics and business, for the wealthy tend to frequent them in search of filling out the ranks of their slave stable.",
+				"There are of course actual slavers who partake in this trade, selling off kidnapped individuals to undiscerning wealthy elites. This is a highly reviled practice in Bundheim, making such marketeers criminals of the highest order.",
+				{
+					"type": "entries",
+					"name": "Feature: Know Your Client, Know Your Goods",
+					"entries": [
+						"You have extensive experience with the merchant elite and the clientele that frequent them. You find that merchants and nobles treat you with the familiarity of one who belongs in their midst. As well, you have a keen eye for assessing the value of things and may make any skill checks to assess value or quality of goods or people with advantage."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The people who were once meat marketeers before adventuring share a few common characteristics which they might find useful in the course of their travels. Key among these is a comfort with people as they are accustomed to charming and bartering. This makes them keen observers, capable of sensing the motives and character traits of people easily. All of this comes at a bit of a cost in that it is easy to lose empathy when they maintain the mindset of people as business",
+						{
+							"type": "table",
+							"caption": "Meat Marketeer Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I value coin most highly for it is the lifeblood of modern society."
+								],
+								[
+									"2",
+									"Flattery will get me everywhere, and I am well practiced in its art."
+								],
+								[
+									"3",
+									"Nothing makes me happier than successfully connecting people."
+								],
+								[
+									"4",
+									"I am utterly unflappable, for all disagreements only signal the need for more negotiation."
+								],
+								[
+									"5",
+									"I judge people by what they do, not by where they came from."
+								],
+								[
+									"6",
+									"I like to say a lot while revealing very little."
+								],
+								[
+									"7",
+									"I work hard and then blow off steam by playing hard."
+								],
+								[
+									"8",
+									"I prefer to act like a common person despite my economic standing"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I will do whatever it takes to accumulate wealth."
+								],
+								[
+									"2",
+									"Most people don’t truly know what they want, and I wish to help them find out."
+								],
+								[
+									"3",
+									"I hope to one day be the leader of my own guild."
+								],
+								[
+									"4",
+									"Slavers are a blemish on our trade, I will combat them at every turn."
+								],
+								[
+									"5",
+									"Everyone should be free to fulfill their desires."
+								],
+								[
+									"6",
+									"My personal biases should not affect a proper pairing."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I was run out of my guild due to a misunderstanding, I will regain my rightful place."
+								],
+								[
+									"2",
+									"I was once a participant in a pairing, and now I wish to help others find the joy it brought me."
+								],
+								[
+									"3",
+									"I had a favorite client who was like a best friend, until one of my pairings convinced him I was corrupt."
+								],
+								[
+									"4",
+									"I come from a great meat marketeer family, and I will do their name proud."
+								],
+								[
+									"5",
+									"I apprenticed with a slaver before learning the vileness of their trade, one day I will run my sword through them."
+								],
+								[
+									"6",
+									"A colleague challenged my own views of myself, so now I search for understanding."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I never take no for an answer."
+								],
+								[
+									"2",
+									"The only value other people have is the value they can bring me."
+								],
+								[
+									"3",
+									"I find there is no success unless all is perfectly done."
+								],
+								[
+									"4",
+									"I am the most well connected and smartest person in the room."
+								],
+								[
+									"5",
+									"The first offer is never enough, I must always haggle up even if it would cost the client dearly."
+								],
+								[
+									"6",
+									"I don’t worry about repercussions beyond the current deal being made."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Curious Explorer",
+			"source": "KinksAndCantrips",
+			"page": 96,
+			"skillProficiencies": [
+				{
+					"investigation": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"navigator's tools",
+							"cartographer's tools"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"traveler's clothes|phb",
+						{
+							"special": "writing kit (quill, ink, parchment and journal)"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Investigation}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Either {@item cartographer's tools|PHB} or {@item navigator's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item traveler's clothes|PHB}, a writing kit (quill, ink, parchment and journal), a belt {@item pouch|PHB} containing 10gp"
+						}
+					]
+				},
+				"Hailing from the isolated continent of Frjel you have journeyed away from your homeland in search of a place among the nations of Bundheim.",
+				"Frjel knows little of the domination and submission that rules Bundheim society, but you are curious to learn more about these concepts. You were raised in a traditional society where sex and relationships are plain.",
+				"The Free State of Frjel is a calm nation devoid of strife, where the monarchy ensures life ticks onward for its citizens without major upheaval. However, as Frjel was largely inaccessible until recently, you are also not well studied in the greater pieces of history that shaped the world. Instead, you have a set of beliefs and history that is correct insofar as it depicts Frjel's history, but that history has glaring errors in the lands beyond Frjel's shores.",
+				"Your life is devoted to exploration and learning, both of which have driven you to come to the new lands beyond Frjel. You seek new experiences and to ultimately define yourself, as the dynamics of Bundheim intrigue you greatly.",
+				{
+					"type": "entries",
+					"name": "Feature: Discover Yourself",
+					"entries": [
+						"You are an individual seeking to define what you desire, and more importantly who you are. When creating a character with this background, you may not pick any of the sub-classes contained within this book. Instead, at a point in which you have down time, you may spend 3 days for each level you have gained to change one of your classes and/or sub-classes to one from this book. Work with your GM to flesh out any required equipment or material changes. Once you have used this feature, you may not use it again."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Air of Innocence",
+					"entries": [
+						"Your fresh-eyed and bushy tailed demeanor gives you a leg up when interacting with the strangers you're sure to encounter on your travels. All humanoids you interact with innately treat you as a friendly acquaintance until you or someone associated with you does something to change this opinion."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Those who choose this background usually do so in search of themselves. You are one of these wandering explorers who are curious and attentive, but within, you are facing turmoil about your own identity. You tend to pay close attention to others and seek out new experiences in order to find who you are.",
+						"This tends to make you overly trusting as your excitement can blind you to the nefarious intentions of others who seek to exploit your naivete.",
+						{
+							"type": "table",
+							"caption": "Curious Explorer Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am willing to try anything once."
+								],
+								[
+									"2",
+									"I want to hear the story of everyone around me, and record it to tell others."
+								],
+								[
+									"3",
+									"I love to make new connections and see new sights."
+								],
+								[
+									"4",
+									"I am naturally inquisitive and want to know how everything works, no matter how small the subject matter."
+								],
+								[
+									"5",
+									"I want to experience everything, but more than anything I want to find good food."
+								],
+								[
+									"6",
+									"I want to bring what I learn back to my people, for I am a conduit to them."
+								],
+								[
+									"7",
+									"I know who I am and what I want, but I'm worried it's wrong and I'm looking for validation."
+								],
+								[
+									"8",
+									"I've faced past trauma about what I want and I'm looking for a way to heal from it."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I’ve spent too long hiding what I want, I will not be ashamed now."
+								],
+								[
+									"2",
+									"My newfound allies are everything to me, I will do anything to ensure their safety."
+								],
+								[
+									"3",
+									"While I have already found myself, I will mentor anyone so the path they walk is easier than mine was."
+								],
+								[
+									"4",
+									"I will become the best at my newfound passion, no matter who gets in my way."
+								],
+								[
+									"5",
+									"The freedom I am seeking within myself has inspired me to ensure the freedom of others."
+								],
+								[
+									"6",
+									"None should be degraded for their desires."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"A kind soul took me in when I first arrived, I will protect them with my life."
+								],
+								[
+									"2",
+									"I have found someone that matches my desires exactly, I will learn all I can from them."
+								],
+								[
+									"3",
+									"Though I am confused, I have found another seeking answers and I believe we can help each other."
+								],
+								[
+									"4",
+									"My parents have always encouraged me to find myself, now I want to make them proud of me by the deeds I do."
+								],
+								[
+									"5",
+									"A former friend turned on me when I opened up to them; now I am even more driven to be happy with who I am."
+								],
+								[
+									"6",
+									"A past relationship failed because of my desires, but I still admire that former partner greatly."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am willing to try {@bold anything} once."
+								],
+								[
+									"2",
+									"I don’t know who I am, so I’ll act like you in the hopes that you won’t notice."
+								],
+								[
+									"3",
+									"I’m jealous of anyone who gets to be happy about who they are without this struggle for self discovery."
+								],
+								[
+									"4",
+									" My own desires sicken me and I struggle to accept them."
+								],
+								[
+									"5",
+									"I am worried that my desires make me a bad person because they include hurting people."
+								],
+								[
+									"6",
+									"Because I have been unable to express my desires, I am obsessed with them."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sadistic Artist",
+			"source": "KinksAndCantrips",
+			"page": 98,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"medicine": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"leatherworker's tools",
+							"smith's tools",
+							"woodcarver's tools"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"common clothes|phb",
+						{
+							"special": "torture implements (flogger, clothespins, a small knife)"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Insight}, {@skill Medicine}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item leatherworker's tools|PHB}, {@item smith's tools|PHB}, or {@item woodcarver's tools|PHB}."
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "See the Proficient in Pain feature below."
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item common clothes|PHB}, a set of torture implements (flogger, clothespins, a small knife), a belt {@item pouch|PHB} containing 10gp"
+						}
+					]
+				},
+				"To some they are torturers, but that term is so passé to those who practice the art. There is little as delicate as the act of binding another person to your will then inflicting agonies upon them so delicious that they thank you for it afterward. It is no boast to say those that can do so possess a unique talent borne from innate ability and endless study.",
+				"Individuals will travel far to have a session with these artists, to experience something outside what they think they are capable of. The goal of these visits might simply be mundane, such as to blow off a little steam or let loose. However the highest caliber artist seeks to bring enlightenment and self improvement to the client, so that they might walk away a better person for it.",
+				"And sure, some use these sadistic skills for evil. That does not make the act itself evil, for it is intention that ultimately decides the alignment of the artist.",
+				{
+					"type": "entries",
+					"name": "Feature: Proficient in Pain",
+					"entries": [
+						"You can discern what someone is trying to say even if they are gagged or screaming, assuming they are attempting to communicate in a language you know. In addition, if you spend at least one hour torturing a humanoid, you gain a +1 bonus to any skill checks for each hour you spent torturing them when you make a skill check related to verbal interaction with that creature (such as persuading or interrogating them), up to a maximum bonus of +5. This effect ends when you have spent 1 hour or more not torturing the creature."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"The individuals who become Sadistic Artists usually do so because of their passion for the field. They are usually highly driven, borderline obsessive really, about pursuing the best and latest techniques for bringing an experience to their clients.",
+						"However this zeal can have a downside because the pursuit of perfection comes with the risk of losing sight of morality. Many storied torturers considered themselves an artist but to those that found themselves under their influence, they were nothing more than evil incarnate.",
+						{
+							"type": "table",
+							"caption": "Sadistic Artist Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am incredibly curious about all things that induce unique experiences."
+								],
+								[
+									"2",
+									"I appreciate the finer things in life, because someone worked hard to create them."
+								],
+								[
+									"3",
+									"I love connecting with people and learning who they truly are."
+								],
+								[
+									"4",
+									"When I'm working, I put on a persona to help me mask my own insecurities."
+								],
+								[
+									"5",
+									"I bring an upbeat attitude to everything I do, because tormenting can be fun."
+								],
+								[
+									"6",
+									"Flattery will get you everywhere, particularly with me."
+								],
+								[
+									"7",
+									"I appreciate good banter as a sign of wit."
+								],
+								[
+									"8",
+									"I love surprises because they help me catch people off guard."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"To endure is the greatest show of strength one can exhibit."
+								],
+								[
+									"2",
+									"Screams are the sweetest form of melody."
+								],
+								[
+									"3",
+									"Everyone deserves to know rhapsody, even the common person."
+								],
+								[
+									"4",
+									"My time is precious, and worth more than a little coin."
+								],
+								[
+									"5",
+									"Blood is the most precious of mediums to work with."
+								],
+								[
+									"6",
+									"To pursue perfection is to pursue the divine."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"When I became an adventurer, I had to leave behind my favorite client. Now I wish to make them proud."
+								],
+								[
+									"2",
+									"An accident traumatized a client under my care, I want to make it up to them."
+								],
+								[
+									"3",
+									"Artists from my guild showed me the ropes early on, now I wish to do the same for others."
+								],
+								[
+									"4",
+									"A mentor kept one of their key techniques secret, I will do anything to figure it out."
+								],
+								[
+									"5",
+									"I’ve heard rumors of a rope master of unprecedented skill. I wish to become their apprentice."
+								],
+								[
+									"6",
+									"A critic harshly reviewed my service, I wish to prove them wrong."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"It is easy for me to get lost in the idea of perfection in the current task and lose sight of my larger goals."
+								],
+								[
+									"2",
+									"I am superior to all around me, and I struggle to tolerate the weak."
+								],
+								[
+									"3",
+									"There are no limits beyond what is physically possible."
+								],
+								[
+									"4",
+									"I struggle to discern if someone is ready for a certain experience, and tend to go overboard."
+								],
+								[
+									"5",
+									"What matters most is what I take away from a scene, not what the client feels."
+								],
+								[
+									"6",
+									"I am ashamed of what I do."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dungeoneer",
+			"source": "KinksAndCantrips",
+			"page": 99,
+			"skillProficiencies": [
+				{
+					"investigation": true,
+					"sleight of hand": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"carpenter's tools",
+							"mason's tools",
+							"smith's tools",
+							"tinker's tools",
+							"woodcarver's tools"
+						],
+						"count": 2
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"traveler's clothes|phb",
+						{
+							"special": "each of the tool kits you have chosen to be proficient in"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Investigation}, {@skill Sleight of Hand}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Choose two from the following list: {@item carpenter's tools|PHB}, {@item mason's tools|PHB}, {@item smith's tools|PHB}, {@item tinker's tools|PHB} or {@item woodcarver's tools|PHB}."
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item traveler's clothes|PHB}, one each of the tool kits you have chosen to be proficient in, a belt {@item pouch|PHB} containing 10gp"
+						}
+					]
+				},
+				"The world is littered with dungeons, both of the ruinous and playful varieties. Like all structures, someone has to design, build, and maintain these spaces and it just so happens there is a sizable overlap in the skill sets needed for both types.",
+				"The vaunted dungeoneer does the dirty work that others are not often willing to partake in. They do the thankless work behind the scenes, making the pillories and hanging the proverbial chains. Well, at least they do so for the playful dungeons. For the deadly ones, theirs is the genius behind each trap and monster.",
+				"Yet the knowledge of mechanics, construction, and design allow someone with this skill set to have a significant advantage when it comes to adventuring. Who better to know where a trap may lay hidden than one adept at placing such devices? For this reason, dungeoneers are highly desired in many circles as they make excellent practical allies.",
+				{
+					"type": "entries",
+					"name": "Feature: Dungeoneering",
+					"entries": [
+						"You have ample experience in planning and placing devices of suffering in spaces of torment. You have advantage on skill checks made to notice or discern how to disarm traps. You can also perfectly recall the layout and physical details of any dungeon you have been inside within the last 6 months."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Like all good architects, those with a dungeoneering background tend to be passionate about their art while retaining a sense of practicality. They appreciate fine artistry but look at problems from a pragmatic perspective.",
+						"Much akin to mages, it is easy for dungeoneers to get lost in their work. Each detail calls to them on an intimate level and it is easy to lose the forest for the trees",
+						{
+							"type": "table",
+							"caption": "Dungeoneer Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I love to roll up my sleeves and dig into a problem."
+								],
+								[
+									"2",
+									"There is no such thing as too dirty of a job, nor a job too small."
+								],
+								[
+									"3",
+									"I am fascinated by interconnecting systems, particularly traps that link one after the other."
+								],
+								[
+									"4",
+									"I love including the personal touches in my work and go the extra mile to learn all I can about those around me."
+								],
+								[
+									"5",
+									"I have an anecdote for every occasion."
+								],
+								[
+									"6",
+									"I want to know how things work, the more complex the better."
+								],
+								[
+									"7",
+									"The key to success is being fastidiously organized."
+								],
+								[
+									"8",
+									"Etiquette and euphemisms are for people who have time to lollygag, and I am not one of them."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Learning is its own reward and I want to know all that I can."
+								],
+								[
+									"2",
+									"I never work for free."
+								],
+								[
+									"3",
+									"It is only through constant practice that we can improve ourselves."
+								],
+								[
+									"4",
+									"Once I have learned enough, I will build the perfect dungeon that none can delve."
+								],
+								[
+									"5",
+									"Life is about the memories we help to create."
+								],
+								[
+									"6",
+									"What I do is art, and I will ensure it is respected as such."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"My tools are as valuable as my hands because they were passed down through my family."
+								],
+								[
+									"2",
+									"A rival stole one of my designs and is now famous for it."
+								],
+								[
+									"3",
+									"I was expelled from my guild for incompetence, I will return and prove my expertise one day."
+								],
+								[
+									"4",
+									"I have designed the perfect collar, now I need to find someone worthy of wearing it."
+								],
+								[
+									"5",
+									"I will bring my work to the common people because you should not need to be rich to have a wonderful dungeon."
+								],
+								[
+									"6",
+									"I lost my mentor due to a failed design. I will find where they went wrong and finish their creation."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am capable of fixing any problem or person I encounter."
+								],
+								[
+									"2",
+									"Hard work is the most desirable trait, and any who cannot hack it are not worth my time."
+								],
+								[
+									"3",
+									"My work is my life and I struggle to have passions outside of it."
+								],
+								[
+									"4",
+									"Messiness and minor mistakes frustrate me to no end."
+								],
+								[
+									"5",
+									"I can never be satisfied, because I can always do better."
+								],
+								[
+									"6",
+									"I am jealous of any that are better than me and it keeps me from pushing myself."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Teratologist",
+			"source": "KinksAndCantrips",
+			"page": 100,
+			"skillProficiencies": [
+				{
+					"animal handling": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"deep speech": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"calligrapher's supplies": true,
+					"cartographer's tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"traveler's clothes|phb",
+						"explorer's pack|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Animal Handling}, {@skill Survival}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item calligrapher's supplies|PHB}, {@item cartographer's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "Deep Speech"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of {@item traveler's clothes|PHB}, {@item explorer's pack|PHB}, a belt {@item pouch|PHB} containing 10gp"
+						}
+					]
+				},
+				"Monsters are a fact of daily life in Bundheim, and some individuals choose to devote their lives to the study of such creatures. Many of these teratologists do so in search of ways to manage the monsters, to tame them for the purposes of fulfilling desires. Yet others do so in search of improved defenses against these creatures, or to better hunt them for components.",
+				"It is easy however to get complacent in this field, to achieve a sense of mastery over the unknown terrors of the wilds. Those that fall into this trap find themselves prey to the very things they study. Of course, if one survives such an encounter they might learn more from the ordeal thanks to the firsthand experience.",
+				{
+					"type": "entries",
+					"name": "Feature: Xenophilia",
+					"entries": [
+						"You are adept at discerning the nature and function of monsters, which gives you an edge in your pursuit of them. You have advantage on survival checks to track aberrations, beasts, and monstrosities. In addition, while you are within 60 feet of a hostile aberration, beast, or monstrosity you are considered to have at least 1 Pleasure and may not fall below 1 Pleasure so long as you remain conscious and within this range."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Teratology is exhausting dangerous work often undergone by those with an explorer's mindset. Many such individuals are bold and adventurous by nature, always seeking out new experiences and thrills in the pursuit of their passion. So too do they often possess innate curiosity, at least where it pertains to the subject of monsters.",
+						"This attitude can lead to carelessness however, as the pursuit of their quarry can blind teratologists to the threats around them. They are susceptible to overconfidence and often fall victim to the very thing they are hunting.",
+						{
+							"type": "table",
+							"caption": "Teratologist Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I prefer to barrel headlong into my research. Discovery requires risk."
+								],
+								[
+									"2",
+									"A more measured approach will serve me well before I get into the field."
+								],
+								[
+									"3",
+									"I like to be thought of as a noble explorer and prefer the finer things in life."
+								],
+								[
+									"4",
+									"I worry about others stealing my work, so value secrecy above all else."
+								],
+								[
+									"5",
+									"People are like monsters, their actions tell you everything you need to know about them."
+								],
+								[
+									"6",
+									"I am very sure of myself, and wish to spread that confidence to others."
+								],
+								[
+									"7",
+									"I have been out in the field so much that I have lost the finer social graces."
+								],
+								[
+									"8",
+									"Research is fine, but more than anything I love to travel."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"The sweetest fruit of my endeavors is to be renowned worldwide."
+								],
+								[
+									"2",
+									"No job is too big if the coin is right, but no job is worth doing for free."
+								],
+								[
+									"3",
+									"The data I gather is its own reward."
+								],
+								[
+									"4",
+									"What I learn from monsters I will use to empower myself."
+								],
+								[
+									"5",
+									"I am seeking the strongest monster in order to kill it and prove my own strength."
+								],
+								[
+									"6",
+									"Nothing is inherently evil, many creatures are just misunderstood."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I have lost colleagues to a particular monster and wish to end its reign of terror."
+								],
+								[
+									"2",
+									"My mentor died because of a mistake I made, I will protect all around me no matter the cost."
+								],
+								[
+									"3",
+									"My lover was transformed into a monster, now I seek to fully understand them."
+								],
+								[
+									"4",
+									"I serve my nation and its people by the work I do."
+								],
+								[
+									"5",
+									"A monster stole my soul, now I am searching for its weakness so that I may get it back."
+								],
+								[
+									"6",
+									"A rival passed off my work as their own, I will disgrace them and regain my reputation."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"When things get too hairy, I run to save my own skin."
+								],
+								[
+									"2",
+									"I struggle to tell when something is truly evil and often find myself being manipulated because of it."
+								],
+								[
+									"3",
+									"There is no threat too big, nor anything I cannot handle."
+								],
+								[
+									"4",
+									"I’ll do anything to get my hands on valuable monster parts."
+								],
+								[
+									"5",
+									"I throw myself at dangerous creatures in the hopes they will bring me carnal pleasure, despite the danger."
+								],
+								[
+									"6",
+									"Other people often disappoint me, at least with monsters you know where you stand."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maidservant",
+			"source": "KinksAndCantrips",
+			"page": 101,
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"insight": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"cobbler's tools",
+							"weaver's tools"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "upper society servant's clothes"
+						},
+						{
+							"special": "cleaning kit (feather duster, soap, and rag)"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 200
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Either {@item cobbler's tools|PHB} or {@item weaver's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of upper society servant's clothes, a cleaning kit (feather duster, {@item soap|PHB}, and rag), a belt {@item pouch|PHB} containing 2gp"
+						}
+					]
+				},
+				"Every noble household of any sufficient standing will have a large staff of servants, cooks, attendants, and so forth. Unique among these positions are the maidservants who act as a combination cleaner, servant, and personal attendant. Though many have gained employment as a maid, few have attained the lauded position of maidservant.",
+				"Over time the close proximity of these individuals, along with the submissive nature of their work, has fostered a more direct relationship with the nobles of the house. In many cases this involves carnal services rendered in addition to menial ones, with the more sadistic nobles joyously subjecting their maidservants to various tortures for their own enjoyment. In turn, many masochists have taken it upon themselves to learn the skills necessary for this trade as they find it a welcome home for their predilections.",
+				"While this may seem a one directional affair, and in some cases it is just that, often a maidservant and a noble will form a bond of loyalty and protectiveness toward each other. In this way the maidservant expands their repertoire to include basic bodyguarding duties and in rare cases they function as the head of security for the household itself.",
+				"It should be noted that despite the connotation of \"maid\" with one of a feminine nature, all genders, orientations, and backgrounds have achieved the vaunted status of maidservant.",
+				{
+					"type": "entries",
+					"name": "Feature: Homebound",
+					"entries": [
+						"You are skilled at maneuvering through the complex social structure of a noble house. In particular you find your expertise allows you a certain amount of freedom by masquerading as part of the staff. While you are dressed in a maidservant's uniform within a place dedicated to high society, those of noble standing automatically perceive you as unimportant until you make a hostile action. During this time you have advantage on Dexterity ({@skill Stealth}) checks, Dexterity ({@skill Sleight of Hand}) checks, and Charisma ability checks if you are bound or {@condition restrained}."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Maidservants tend to be quiet, stalwart companions. First and foremost they are loyal to those they are in service to and work tirelessly to look after them. These attributes can have downsides however as maidservants often blind themselves to the misdeeds of their betters. Sometimes this can read as naive, but the more experienced will eventually have to decide for themselves what they are willing to tolerate should they find themselves in the employ of a maligned noble.",
+						{
+							"type": "table",
+							"caption": "Maidservant Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Without loyalty we have nothing."
+								],
+								[
+									"2",
+									"I am a silent companion, meant to be seen but not heard."
+								],
+								[
+									"3",
+									"I strive for perfection in all things, at least in the eyes of my betters."
+								],
+								[
+									"4",
+									"While serving is fine, the true joy comes from being punished for my mistakes."
+								],
+								[
+									"5",
+									"I run a tight ship and expect all around me to meet my standards."
+								],
+								[
+									"6",
+									"My servitude is my primary focus and I strive everlong to anticipate the needs of those around me."
+								],
+								[
+									"7",
+									"I am incredibly protective of those I am in service to."
+								],
+								[
+									"8",
+									"I define myself by my work."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"The greatest honor is remaining unnoticed as I go about my duties."
+								],
+								[
+									"2",
+									"I seek advancement among the household’s staff first and foremost."
+								],
+								[
+									"3",
+									"I wish to pull the levers of society but never want to be perceived as such."
+								],
+								[
+									"4",
+									"I travel between noble houses to learn the latest in binding and punishment techniques, hoping to one day be the best at that craft."
+								],
+								[
+									"5",
+									"I pine to be swept up by a noble who wishes me to be their favorite plaything."
+								],
+								[
+									"6",
+									"I cover for my fellow staff members, even going as far as to confess to their mistakes so they are not punished."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"A noble mortally punished a fellow maidservant and I did not intervene. Now I seek vengeance."
+								],
+								[
+									"2",
+									"A fellow maidservant framed me for a mistake that got me removed from the household. I will prove my innocence and regain my honor."
+								],
+								[
+									"3",
+									"I bought an enchanted duster which wrecked the household. I must track down the shopkeep who sold it to me and make things right with the noble I served."
+								],
+								[
+									"4",
+									"The noble I was in service to gifted me a particular toy before they were assassinated. That toy is now my most prized possession and I think of them whenever I use it."
+								],
+								[
+									"5",
+									"I awoke in my noble’s bed to find the household empty and apparently unoccupied for decades. I will stop at nothing to determine what happened."
+								],
+								[
+									"6",
+									"My best friend and I have wanted to become maidservants our whole lives. Now we are bitter rivals vying for placement in the best household in the city."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I see myself only as an object to be used by those better than me."
+								],
+								[
+									"2",
+									"My morality does not matter as I only need to do what my noble asks of me."
+								],
+								[
+									"3",
+									"I can solve anyone’s problem and will not rest until I have done so."
+								],
+								[
+									"4",
+									"Initiative is for the fools who are not patient enough to wait for orders."
+								],
+								[
+									"5",
+									"I seek ever more intense punishments with no regard for my own wellbeing."
+								],
+								[
+									"6",
+									"A mess is not to be tolerated and I am well within my rights to reprimand those creating one."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maidservant (Pleasing Demeanor)",
+			"source": "KinksAndCantrips",
+			"page": 101,
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"insight": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"cobbler's tools",
+							"weaver's tools"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "upper society servant's clothes"
+						},
+						{
+							"special": "cleaning kit (feather duster, soap, and rag)"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 200
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Athletics}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Either {@item cobbler's tools|PHB} or {@item weaver's tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of upper society servant's clothes, a cleaning kit (feather duster, {@item soap|PHB}, and rag), a belt {@item pouch|PHB} containing 2gp"
+						}
+					]
+				},
+				"Every noble household of any sufficient standing will have a large staff of servants, cooks, attendants, and so forth. Unique among these positions are the maidservants who act as a combination cleaner, servant, and personal attendant. Though many have gained employment as a maid, few have attained the lauded position of maidservant.",
+				"Over time the close proximity of these individuals, along with the submissive nature of their work, has fostered a more direct relationship with the nobles of the house. In many cases this involves carnal services rendered in addition to menial ones, with the more sadistic nobles joyously subjecting their maidservants to various tortures for their own enjoyment. In turn, many masochists have taken it upon themselves to learn the skills necessary for this trade as they find it a welcome home for their predilections.",
+				"While this may seem a one directional affair, and in some cases it is just that, often a maidservant and a noble will form a bond of loyalty and protectiveness toward each other. In this way the maidservant expands their repertoire to include basic bodyguarding duties and in rare cases they function as the head of security for the household itself.",
+				"It should be noted that despite the connotation of \"maid\" with one of a feminine nature, all genders, orientations, and backgrounds have achieved the vaunted status of maidservant.",
+				{
+					"type": "entries",
+					"name": "Feature: Pleasing Demeanor",
+					"entries": [
+						"With the GM’s permission, you may choose to gain this feature instead of the Homebound feature. Your primary focus has become to bring Pleasure to the individual you serve. When you spend at least 1 hour pleasing a creature in whatever way they see fit, they gain 1 Pleasure. This Pleasure does not fade for 24 hours and no effect may remove it. Only one creature may be affected by this ability at a time."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"Maidservants tend to be quiet, stalwart companions. First and foremost they are loyal to those they are in service to and work tirelessly to look after them. These attributes can have downsides however as maidservants often blind themselves to the misdeeds of their betters. Sometimes this can read as naive, but the more experienced will eventually have to decide for themselves what they are willing to tolerate should they find themselves in the employ of a maligned noble.",
+						{
+							"type": "table",
+							"caption": "Maidservant Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Without loyalty we have nothing."
+								],
+								[
+									"2",
+									"I am a silent companion, meant to be seen but not heard."
+								],
+								[
+									"3",
+									"I strive for perfection in all things, at least in the eyes of my betters."
+								],
+								[
+									"4",
+									"While serving is fine, the true joy comes from being punished for my mistakes."
+								],
+								[
+									"5",
+									"I run a tight ship and expect all around me to meet my standards."
+								],
+								[
+									"6",
+									"My servitude is my primary focus and I strive everlong to anticipate the needs of those around me."
+								],
+								[
+									"7",
+									"I am incredibly protective of those I am in service to."
+								],
+								[
+									"8",
+									"I define myself by my work."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"The greatest honor is remaining unnoticed as I go about my duties."
+								],
+								[
+									"2",
+									"I seek advancement among the household’s staff first and foremost."
+								],
+								[
+									"3",
+									"I wish to pull the levers of society but never want to be perceived as such."
+								],
+								[
+									"4",
+									"I travel between noble houses to learn the latest in binding and punishment techniques, hoping to one day be the best at that craft."
+								],
+								[
+									"5",
+									"I pine to be swept up by a noble who wishes me to be their favorite plaything."
+								],
+								[
+									"6",
+									"I cover for my fellow staff members, even going as far as to confess to their mistakes so they are not punished."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"A noble mortally punished a fellow maidservant and I did not intervene. Now I seek vengeance."
+								],
+								[
+									"2",
+									"A fellow maidservant framed me for a mistake that got me removed from the household. I will prove my innocence and regain my honor."
+								],
+								[
+									"3",
+									"I bought an enchanted duster which wrecked the household. I must track down the shopkeep who sold it to me and make things right with the noble I served."
+								],
+								[
+									"4",
+									"The noble I was in service to gifted me a particular toy before they were assassinated. That toy is now my most prized possession and I think of them whenever I use it."
+								],
+								[
+									"5",
+									"I awoke in my noble’s bed to find the household empty and apparently unoccupied for decades. I will stop at nothing to determine what happened."
+								],
+								[
+									"6",
+									"My best friend and I have wanted to become maidservants our whole lives. Now we are bitter rivals vying for placement in the best household in the city."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I see myself only as an object to be used by those better than me."
+								],
+								[
+									"2",
+									"My morality does not matter as I only need to do what my noble asks of me."
+								],
+								[
+									"3",
+									"I can solve anyone’s problem and will not rest until I have done so."
+								],
+								[
+									"4",
+									"Initiative is for the fools who are not patient enough to wait for orders."
+								],
+								[
+									"5",
+									"I seek ever more intense punishments with no regard for my own wellbeing."
+								],
+								[
+									"6",
+									"A mess is not to be tolerated and I am well within my rights to reprimand those creating one."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Court Dancer",
+			"source": "KinksAndCantrips",
+			"page": 101,
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+				"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"performance",
+							"persuasion",
+							"acrobatics"
+						]
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"anyGamingSet": 2,
+					"anyMusicalInstrument": 2,
+					"disguise kit": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"special": "performer's clothes suitable to upper society"
+						},
+						{
+							"special": "instrument of your choice"
+						},
+						"disguise kit|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Your choice of one from among {@skill Performance}, {@skill Persuasion} or {@skill Acrobatics}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "Two instruments and two gaming sets of your choice, {@item disguise kit|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "A set of performer's clothes suitable to upper society, an instrument of your choice, a {@item disguise kit|PHB}, a belt {@item pouch|PHB} containing 10gp"
+						}
+					]
+				},
+				"Acting as one part performer in residence, one part concubine, court dancers devote themselves to pleasing their patron's every whim. This arrangement can range between a comfortable position where the dancer occupies a space akin to a spouse, or a much more restricted affair where the dancer is often bound only to be partially released when performing. The nature of this arrangement is dependent on the predilections of both the dancer and the patron, and in truth some of the most lucrative positions reside with those who devote themselves to the latter.",
+				"The types of performances put on by dancers covers a wide range. Most simply excel at acrobatic performance in time with music in order to put on a more classic show for their patron. Others include various torments or feats of endurance as part of their act which can in turn increase their rates and standing. Particularly sadistic nobles will pay huge sums for a dancer who is capable of putting on a show that excites them for such nobles have seen many tortures and are rarely impressed. So too do court dancers come in all shapes and sizes, all genders and orientations. The generally accepting nature of Bundheim has created a world in which all manner of dancers are cherished.",
+				{
+					"type": "entries",
+					"name": "Feature: Enthralling Gyrations",
+					"entries": [
+						"Your performing prowess enchants any who behold it and entices them to spend time with you. If you spend at least 10 minutes performing you may have any number of humanoids that beheld you for that duration make an Wisdom ({@skill Insight}) check vs your Charisma ({@skill Performance}). On a failure, you have advantage on all Charisma checks directed at that creature and, if their orientation allows physical attraction toward you, they consider you a highly desirable mate. This effect lasts until you or someone known to be associated with you takes hostile action against the creature."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Suggested Characteristics",
+					"entries": [
+						"As a necessity for enticing prospective patrons, many dancers find confidence a necessary trait. This in turn aids their performances as few want to watch a dancer who is stumbling their way through their routine. As well, many are fiercely territorial toward their patrons and live in constant fear they will be replaced. In this way dancers are prone to developing a very vindictive attitude that can be harsh to those they perceive as a threat. Yet, thanks to their performative abilities, they are extremely careful to keep an enticing face toward their patron or any who would influence them.",
+						{
+							"type": "table",
+							"caption": "Court Dancer Personality Traits",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I am confident in my abilities and feel as though there is little I cannot master."
+								],
+								[
+									"2",
+									"I feel most at home when I am being beheld by those in awe of me."
+								],
+								[
+									"3",
+									"I prefer to present as mysterious and intriguing but in reality I'm making it up as I go."
+								],
+								[
+									"4",
+									"I am fascinated by the latest fashions and trends."
+								],
+								[
+									"5",
+									"My outward appearance serves as a suit of armor against a harsh world."
+								],
+								[
+									"6",
+									"I am always open to trying new things if my patron wishes for me to do so."
+								],
+								[
+									"7",
+									"I am intensely curious, the best perk of a wealthy patron is access to their library."
+								],
+								[
+									"8",
+									"I look out for myself first and foremost, no one else has your back."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Performance is not just an art, it is a spiritual experience shared between two or more individuals."
+								],
+								[
+									"2",
+									"I wish to be known far and wide, and cherished by as many hearts as possible."
+								],
+								[
+									"3",
+									"The relationship between dancer and patron is sacred, an unbreakable bond for all time."
+								],
+								[
+									"4",
+									"I value the wellbeing of other dancers over either myself or my patron."
+								],
+								[
+									"5",
+									"I am a traditionalist at heart, the old ways are best."
+								],
+								[
+									"6",
+									"I take joy in helping soothe the wounded heart, my function is as a healer first and foremost."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Despite all teachings otherwise, I fell in love with a fellow dancer during training. Now I search for them after their disappearance into high society."
+								],
+								[
+									"2",
+									"A patron broke my trust and now I struggle to perform without thinking of them."
+								],
+								[
+									"3",
+									"The dressmaker who made my first outfit is like a parent to me."
+								],
+								[
+									"4",
+									"I sell every gift a patron gives me and send home all my earnings so that my sick sibling has enough to get by."
+								],
+								[
+									"5",
+									"I belong to a secretive group of spies with whom I am more loyal than any other."
+								],
+								[
+									"6",
+									"A wizard patron taught me how to summon a simple familiar who has grown to be my best friend in all the world."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I must outdo each of my previous performances, even if I have to risk my safety to do so."
+								],
+								[
+									"2",
+									"I am covetous of what I feel is mine and will deal harshly with those who threaten to take them."
+								],
+								[
+									"3",
+									"I define myself solely by the opinions others have of me."
+								],
+								[
+									"4",
+									"I refuse to acknowledge the troubles of the world in favor of focusing on an idyllic fantasy."
+								],
+								[
+									"5",
+									"My patron handed me off to another patron who in turn handed me off to another patron. I cannot get over that first patron and pine to return to them."
+								],
+								[
+									"6",
+									"I feel there is little I cannot do, despite having never done a great many things."
+								]
+							]
+						}
+					]
+				}
+			]
+		}
 	]
 }
