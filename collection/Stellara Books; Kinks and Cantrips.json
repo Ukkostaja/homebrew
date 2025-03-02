@@ -11,7 +11,7 @@
                     "Fiona Shade Stories"
 				],
 				"convertedBy": [
-					"Ukkostaja"
+					"Thunderer"
 				],
 				"color": "222227",
 				"version": "0.9.0"
@@ -54,6 +54,113 @@
 			]
 		}
 	] ,
+	"race" : [
+		{
+			"name": "Cubeling",
+			"source": "KinksAndCantrips",
+			"page": 88,
+			"edition": "one",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"con": 2,
+					"dex": 1
+				}
+			],
+				"traitTags": [
+				"Natural Weapon"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"primordial": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "con",
+					"known": {
+						"1": [
+							"alter sex|KinksAndCantrips"
+						]
+					}
+				}
+			],
+			"resist": [
+				"bludgeoning"
+			],
+			"entries": [
+				"A cubeling character has the following traits.",
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"A Cubeling reaches adulthood at the age of 20 and generally lives until their third century."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amorphous Size",
+					"entries": [
+						"Medium, but you may shrink or expand as an action one size up or down, to a cap of Small and Large. In addition you may squeeze through a space as small as one inch wide, but none of the items you are carrying or wearing change sizes, so may not necessarily fit through small spaces."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Primordial."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Viscous Skin",
+					"entries": [
+						"You have resistance to bludgeoning damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Elastic Reach",
+					"entries": [
+						"Add 5 ft. to your attack range when you make a melee attack. You may also take hold of and manipulate objects up to 10 ft. away from you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Expansive Explosion",
+					"entries": [
+						"As an action you may violently expand your body, bludgeoning all creatures near you. When you do so, make an unarmed attack against each creature within 10 ft. of you. On a hit, those creatures take {@damage 2d6} + your Strength modifier bludgeoning damage. You regain the use of this feature when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fluid Physique",
+					"entries": [
+						"You know the {@spell Alter Sex|KinksAndCantrips} cantrip."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+						"Whether it be an ill-begotten mating with a Laticifex ooze, a curse from a god having a lark, or a natural evolution of the ooze-based species of the wilds, Cubelings exist as intelligent humanoid beings whose bodies can be as amorphous or rigid as they desire because it is made entirely of slime. Incredibly, their bodies are not only malleable but elastic to a point, and they possess no internal organs, instead relying rather on a kind of unified cellular structure that only a biology driven by enchantment would explain.",
+					{
+						"type": "entries",
+						"name": "Interspersed Society",
+						"entries": [
+							"As cubelings have a non-traditional origin, there are very few instances of a community of them gathering in one place.",
+							"More commonly, one can find a lone cubeling, or perhaps a pair, wandering through town or living a humble life in the wilds.",
+							"Oddly, cubelings do not often seek their kin. Rather, they seem to be content with companionship from any who are willing to have them despite their bizarre nature. In turn, cubelings tend to hold dear their found family rather than blood relations.",
+							"There are exceptions to this, for a few known villages of cubelings exist. Primarily found within the underdark, most of these villages are peaceful affairs where cubelings live their lives farming whatever they fancy for sustenance (such as mushrooms). However, a few conclaves exist of cubelings who have fallen to the feral nature of the underdark's more dangerous oozes."
+						]
+					}
+				]
+			}
+		}
+	],
 	"spell": [
 		{
 			"name": "Adhesive Globule",
